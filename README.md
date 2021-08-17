@@ -7,6 +7,7 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 
 -   [Technology stack](#technology-stack)
 -   [Project structure](#project-structure)
+-   [Project license](#project-license)
 
 ---
 
@@ -63,3 +64,9 @@ about them, use the links below:
 
 -   [server/](./client) - a directory for the Back-End side of this project
     an API server code.
+
+---
+
+## ⚖️ Project license
+
+**The code** is licensed under the [MIT license](./LICENSE).
