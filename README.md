@@ -36,3 +36,13 @@ as to why these choices.
 
     [typescript]: https://www.typescriptlang.org/
     [typescript logomark]: https://api.iconify.design/simple-icons:typescript.svg "TypeScript logomark"
+
+-   ![pnpm logomark] [pnpm]
+    The primary Node.js package manager is fast, efficient, disk-saving, and
+    has a feature - [workspaces], a **built-in support for [monorepo] without
+    using third tools**.
+
+    [pnpm]: https://pnpm.io/
+    [pnpm logomark]: https://api.iconify.design/simple-icons:pnpm.svg "pnpm logomark"
+    [workspaces]: https://pnpm.io/workspaces
+    [monorepo]: https://en.wikipedia.org/wiki/Monorepo
