@@ -13,3 +13,13 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 
 This project uses the following technology stack, and there's short reasoning
 as to why these choices.
+
+-   ![Git logomark] [Git]
+    As a core version control tool, because it can be used with [GitHub] or
+    [GitLab]. In our case, we use **GitHub** and **GitHub Projects**.
+
+    [git]: https://git-scm.com/
+    [git logomark]: https://api.iconify.design/simple-icons:git.svg "Git logomark"
+    [github]: https://github.com/
+    [gitlab]: https://gitlab.com/
+    [github projects]: https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
