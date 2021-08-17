@@ -13,6 +13,7 @@ make this project better for the open-source community.
 -   [Coding style guidelines](#coding-style-guideliness)
 -   [Git setup](#git-setup)
     -   [Git commits convention](#git-commits-convention)
+-   [Scripts](#scripts)
 
 ---
 
@@ -162,3 +163,14 @@ conventions.**
 [conventional commits]: https://conventionalcommits.org "Conventional commits convention"
 [gitmoji shield]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
 [gitmoji]: https://gitmoji.dev "Gitmoji convention"
+
+---
+
+## 🧰 Scripts
+
+👉 **REMINDER:** This project uses [`pnpm`] as [Node.js] package manager.
+
+[`pnpm`]: https://pnpm.io/
+[node.js]: https://nodejs.org/en/
+
+The following scripts are available for this project:

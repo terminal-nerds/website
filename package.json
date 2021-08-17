@@ -1,0 +1,11 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"homepage": "https://github.com/Team-LogiDev/terminal-nerd",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Team-LogiDev/terminal-nerd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Team-LogiDev/terminal-nerd/issues"
+	}
+}
