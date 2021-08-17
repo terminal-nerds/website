@@ -13,6 +13,7 @@ make this project better for the open-source community.
 -   [Coding style guidelines](#coding-style-guideliness)
 -   [Git setup](#git-setup)
     -   [Git commits convention](#git-commits-convention)
+    -   [Writing commit message](#writing-commits-messages)
 -   [Scripts](#scripts)
 
 ---
@@ -164,6 +165,22 @@ conventions.**
 [gitmoji shield]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
 [gitmoji]: https://gitmoji.dev "Gitmoji convention"
 
+### Writing commit messages
+
+The currently recommended CLI _([Command Line Interface])_ tool to use them
+both is the [gacp] Node.js package.
+
+**You can either use:**
+
+```sh
+pnpm commit
+```
+
+**or install [gacp] globally on your device.**
+
+[command line interface]: https://en.wikipedia.org/wiki/Command-line_interface
+[gacp]: https://github.com/vivaxy/gacp
+
 ---
 
 ## 🧰 Scripts
@@ -174,3 +191,8 @@ conventions.**
 [node.js]: https://nodejs.org/en/
 
 The following scripts are available for this project:
+
+-   `pnpm commit`\
+    **Runs a commit message generator for the staged files** using the [gacp]
+    Node.js package.\
+    📝 The [gacp] configuration is in the [.gacprc.js](./.gacprc.js) file.
