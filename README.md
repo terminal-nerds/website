@@ -23,3 +23,9 @@ as to why these choices.
     [github]: https://github.com/
     [gitlab]: https://gitlab.com/
     [github projects]: https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards
+
+-   ![Node.js logomark] [Node.js]
+    The core JavaScript runtime for this project development.
+
+    [node.js]: https://nodejs.org/en/
+    [node.js logomark]: https://api.iconify.design/simple-icons:nodejs.svg "Node.js logomark"
