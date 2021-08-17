@@ -6,6 +6,7 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 ## 🔗 Table of Content
 
 -   [Technology stack](#technology-stack)
+-   [Project structure](#project-structure)
 
 ---
 
@@ -46,3 +47,19 @@ as to why these choices.
     [pnpm logomark]: https://api.iconify.design/simple-icons:pnpm.svg "pnpm logomark"
     [workspaces]: https://pnpm.io/workspaces
     [monorepo]: https://en.wikipedia.org/wiki/Monorepo
+
+---
+
+## 📁 Project structure
+
+This is a short introduction to this project file tree structure. To learn more
+about them, use the links below:
+
+-   [client/](./client) - a directory for the Front-End side of the project
+    a website application code.
+
+-   [helpers/](./client) - a directory for the packages _(modules)_ with
+    reusable code snippets for both sides.
+
+-   [server/](./client) - a directory for the Back-End side of this project
+    an API server code.
