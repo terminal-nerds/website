@@ -29,3 +29,10 @@ as to why these choices.
 
     [node.js]: https://nodejs.org/en/
     [node.js logomark]: https://api.iconify.design/simple-icons:nodejs.svg "Node.js logomark"
+
+-   ![TypeScript logomark] [TypeScript]
+    The primary programming language offers a fantastic developer experience thanks
+    to its toolings, typings and helps find possible bugs.
+
+    [typescript]: https://www.typescriptlang.org/
+    [typescript logomark]: https://api.iconify.design/simple-icons:typescript.svg "TypeScript logomark"
