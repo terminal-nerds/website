@@ -11,6 +11,8 @@ make this project better for the open-source community.
 -   [Code of Conduct](#code-of-conduct)
 -   [Our philosophy](#our-philosophy)
 -   [Coding style guidelines](#coding-style-guideliness)
+-   [Git setup](#git-setup)
+    -   [Git commits convention](#git-commits-convention)
 
 ---
 
@@ -144,3 +146,19 @@ our adventure in writing code.
    built-in modules.
 
 [the article about the naming convention best practices]: https://javascript.plainenglish.io/javascript-naming-convention-best-practices-b2065694b7d
+
+---
+
+## 🛠️ Git setup
+
+### Git commits convention
+
+[![Conventional Commits shield]][conventional commits] [![Gitmoji shield]][gitmoji]
+
+**This project uses [Conventional Commits], and [Gitmoji] commits
+conventions.**
+
+[conventional commits shield]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge
+[conventional commits]: https://conventionalcommits.org "Conventional commits convention"
+[gitmoji shield]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
+[gitmoji]: https://gitmoji.dev "Gitmoji convention"
