@@ -50,6 +50,10 @@ as to why these choices.
     [workspaces]: https://pnpm.io/workspaces
     [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 
+### Back-End technology stack
+
+### Front-End technology stack
+
 ---
 
 ## 📁 Project structure
