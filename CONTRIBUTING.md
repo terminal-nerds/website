@@ -14,7 +14,7 @@ make this project better for the open-source community.
     -   [Git flow](#git-flow)
     -   [Creating new branch](#creating-new-branch)
     -   [Git commits convention](#git-commits-convention)
-    -   [Writing commit message](#writing-commits-messages)
+    -   [Writing commit message](#writing-commit-message)
 -   [Scripts](#scripts)
 
 ---
@@ -49,7 +49,7 @@ our adventure in writing code.
    that will be more verbose and take more time/effort to write. Put yourself
    in the shoes of other contributors, especially when they just began their
    journey as a developer.\
-   **It also regards file(s) and directory(ies) naming!**
+   It also regards file(s) and directory(ies) naming!
 
 1. **Write functions with declarative names** _(non-anonymous)_.\
    If your function is complex, then instead of arrow functions _(unless you
@@ -68,7 +68,7 @@ our adventure in writing code.
     const DAY = SECONDS * MINUTES * HOURS;
     ```
 
-    - **Variable** - camelCase
+    - **Variables** - camelCase
 
     ```js
     const firstName = "Matt";
@@ -83,7 +83,7 @@ our adventure in writing code.
     const hasEncryption = true;
     ```
 
-    - **Function** - camelCase
+    - **Functions** - camelCase
 
     ```js
     function getName(firstName, lastName) {
@@ -91,7 +91,7 @@ our adventure in writing code.
     }
     ```
 
-    - **Class** - PascalCase
+    - **Classes** - PascalCase
 
     ```js
     class SoftwareDeveloper {
@@ -112,20 +112,6 @@ our adventure in writing code.
      }
     ```
 
-    - **Private** - camelCase and with an underscore (`_`) prefix
-
-    ```js
-     class SoftwareDeveloper {
-         constructor(firstName, lastName) {
-             this.name = _getName(firstName, lastName);
-         }
-
-         _getName(firstName, lastName) {
-             return `${firstName ${lastName}`;
-         }
-     }
-    ```
-
     - **Components** _(in any framework)_ - PascalCase
 
     ```js
@@ -134,19 +120,9 @@ our adventure in writing code.
      }
     ```
 
-1. **Make your commit messages descriptive and ordered.**\
-   Don't be afraid to edit the commit history during the Pull Request.
-   Please ensure it's explaining pretty straightforward with what's going on
-   and the changes it relates to.
-
-    - It is preferable to see changes be split into **small commits**, so they
-      explain step by step. Quantity is not essential, but the quality of
-      communication and educating/informing contributors will help a lot.
-
 1. **Organize imported modules in the code.**\
    This way, we can visually see which modules are ours from this project and
-   which one has been imported from `node_modules` or Node.js packages /
-   built-in modules.
+   which one has been imported from `node_modules/` or Node.js built-in modules.
 
 [the article about the naming convention best practices]: https://javascript.plainenglish.io/javascript-naming-convention-best-practices-b2065694b7d
 
@@ -171,16 +147,16 @@ There are five different branch types in total:
 
 1. `main` _(primary)_ - contains **production-ready** code
 
-    - `hotfix` _(supporting)_ - arise from the necessity to act immediately upon
+    - `hotfix/..` _(supporting)_ - arise from the necessity to act immediately upon
       an undesired state of a live production version - **when a critical bug must
       be resolved immediately**
 
 2. `develop` _(primary)_ - contains latest delivered **development changes**
    for the next release
 
-    - `feature` _(supporting)_ - contains a code for the **upcoming or a
+    - `feature/..` _(supporting)_ - contains a code for the **upcoming or a
       distant future release**
-    - `release` _(supporting)_ - **preparation of a new production release** -
+    - `release/..` _(supporting)_ - **preparation of a new production release** -
       last-minute dotting of i’s and crossing t’s: minor bug fixes and preparing
       meta-data for a release _(version number, build dates, etc.)_
 
@@ -188,16 +164,17 @@ There are five different branch types in total:
 
 ### Creating new branch
 
-👉 **REMEMBER**: The entire branch name should be in snake_case.\
-📝 **NOTE**: We recommend using the [`git flow` extension]:.
+👉 **REMEMBER**: The branch name should be in **snake_case**.
 
-Create a branch name starting with one of the **supporting** branches:
+📝 **NOTE**: We recommend using the [`git flow` extension].
+
+Create a branch name starting with one of the _supporting_ branches patterns:
 
 [`git flow` extension]: https://github.com/nvie/gitflow
 
 #### Feature
 
-Pattern: `feature/short_descriptive_name_#<github_issue_id>`
+**Pattern**: `feature/short_descriptive_name_#<github_issue_id>`
 
 With the [`git flow` extension], you can use these commands:
 
@@ -209,7 +186,7 @@ git flow feature finish short_descriptive_name_#<github_issue_id>
 
 #### Release
 
-Pattern: `release/vSEM.VER.TAG`
+**Pattern**: `release/vSEM.VER.TAG`
 
 With the [`git flow` extension], you can use these commands:
 
@@ -224,7 +201,7 @@ command(s) to pass successfully _(dots are parsed differently)_.
 
 #### Hotfix
 
-Pattern: `hotfix/short_descriptive_problem_#<github_issue_id>`
+**Pattern**: `hotfix/short_descriptive_problem_#<github_issue_id>`
 
 With the [`git flow` extension], you can use these commands:
 
@@ -246,10 +223,10 @@ conventions.**
 [gitmoji shield]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
 [gitmoji]: https://gitmoji.dev "Gitmoji convention"
 
-### Writing commit messages
+### Writing commit message
 
-The currently recommended CLI _([Command Line Interface])_ tool to use them
-both is the [gacp] Node.js package.
+The currently recommended CLI _([Command Line Interface])_ tool to use both of
+these commit conventions is the [gacp] Node.js package.
 
 **You can either use:**
 
@@ -258,6 +235,16 @@ pnpm commit
 ```
 
 **or install [gacp] globally on your device.**
+
+👉 **REMEMBER**: Make your commit messages **descriptive and ordered**.\
+Don't be afraid to edit the commit history during the Pull Request.
+Please ensure it's explaining pretty straightforward with what's going on
+and the changes it relates to.
+
+📝 **NOTE:** It is preferable to see changes be split into **small commits**.\
+This way they can explain changes step by step. Quantity is not essential, but
+the quality of communication and educating/informing contributors will help a
+lot.
 
 [command line interface]: https://en.wikipedia.org/wiki/Command-line_interface
 [gacp]: https://github.com/vivaxy/gacp
@@ -273,7 +260,9 @@ pnpm commit
 
 The following scripts are available for this project:
 
--   `pnpm commit`\
+-   `pnpm commit`
+
     **Runs a commit message generator for the staged files** using the [gacp]
-    Node.js package.\
-    📝 The [gacp] configuration is in the [.gacprc.js](./.gacprc.js) file.
+    Node.js package.
+
+    ⚙️ The configuration is in the [.gacprc.js](./.gacprc.js) file.
