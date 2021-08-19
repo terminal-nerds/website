@@ -2,7 +2,6 @@
 
 **Thank you** very much for sparking an interest in contributing to this project.
 😊
-
 Any of your contributions, small or large, are very much appreciated and
 make this project better for the open-source community.
 
@@ -12,6 +11,7 @@ make this project better for the open-source community.
 -   [Our philosophy](#our-philosophy)
 -   [Coding style guidelines](#coding-style-guideliness)
 -   [Git setup](#git-setup)
+    -   [Git flow](#git-flow)
     -   [Git commits convention](#git-commits-convention)
     -   [Writing commit message](#writing-commits-messages)
 -   [Scripts](#scripts)
@@ -152,6 +152,38 @@ our adventure in writing code.
 ---
 
 ## 🛠️ Git setup
+
+### Git flow
+
+This project uses a popular branch strategy - [Git flow].\
+The exception is that we instead of the **~~master~~** branch name, we use
+**main** instead.
+
+There's a summary below:
+
+The main idea behind the [Git flow] branching strategy is to isolate the work
+into different types of branches.
+The two **primary branches** in Git flow are **`main` and `develop`**.\
+There are three types of **supporting branches** with different intended
+purposes: **`feature`, `release`, and `hotfix`**.\
+There are five different branch types in total:
+
+1. `main` _(primary)_ - contains **production-ready** code
+
+    - `hotfix` _(supporting)_ - arise from the necessity to act immediately upon
+      an undesired state of a live production version - **when a critical bug must
+      be resolved immediately**
+
+2. `develop` _(primary)_ - contains latest delivered **development changes**
+   for the next release
+
+    - `feature` _(supporting)_ - contains a code for the **upcoming or a
+      distant future release**
+    - `release` _(supporting)_ - **preparation of a new production release** -
+      last-minute dotting of i’s and crossing t’s: minor bug fixes and preparing
+      meta-data for a release _(version number, build dates, etc.)_
+
+[git flow]: https://nvie.com/posts/a-successful-git-branching-model/
 
 ### Git commits convention
 
