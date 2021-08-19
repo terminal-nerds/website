@@ -12,6 +12,7 @@ make this project better for the open-source community.
 -   [Coding style guidelines](#coding-style-guideliness)
 -   [Git setup](#git-setup)
     -   [Git flow](#git-flow)
+    -   [Creating new branch](#creating-new-branch)
     -   [Git commits convention](#git-commits-convention)
     -   [Writing commit message](#writing-commits-messages)
 -   [Scripts](#scripts)
@@ -155,7 +156,7 @@ our adventure in writing code.
 
 ### Git flow
 
-This project uses a popular branch strategy - [Git flow].\
+**This project uses a popular branching strategy - [Git flow]**.\
 The exception is that we instead of the **~~master~~** branch name, we use
 **main** instead.
 
@@ -184,6 +185,54 @@ There are five different branch types in total:
       meta-data for a release _(version number, build dates, etc.)_
 
 [git flow]: https://nvie.com/posts/a-successful-git-branching-model/
+
+### Creating new branch
+
+👉 **REMEMBER**: The entire branch name should be in snake_case.\
+📝 **NOTE**: We recommend using the [`git flow` extension]:.
+
+Create a branch name starting with one of the **supporting** branches:
+
+[`git flow` extension]: https://github.com/nvie/gitflow
+
+#### Feature
+
+Pattern: `feature/short_descriptive_name_#<github_issue_id>`
+
+With the [`git flow` extension], you can use these commands:
+
+```sh
+git flow feature start short_descriptive_name_#<github_issue_id>
+# after you finish the work
+git flow feature finish short_descriptive_name_#<github_issue_id>
+```
+
+#### Release
+
+Pattern: `release/vSEM.VER.TAG`
+
+With the [`git flow` extension], you can use these commands:
+
+```sh
+git flow release start "vSEM.VER.TAG"
+# after you finish the work
+git flow release finish "vSEM.VER.TAG"
+```
+
+📝 **NOTE**: You need to surround the version tag with double quotes for the
+command(s) to pass successfully _(dots are parsed differently)_.
+
+#### Hotfix
+
+Pattern: `hotfix/short_descriptive_problem_#<github_issue_id>`
+
+With the [`git flow` extension], you can use these commands:
+
+```sh
+git flow hotfix start descriptive_problem_#<github_issue_id>
+# after you finish the work
+git flow hotfix finish descriptive_problem_#<github_issue_id>
+```
 
 ### Git commits convention
 
