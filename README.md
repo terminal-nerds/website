@@ -1,7 +1,10 @@
 # Terminal Nerd
 
-This project is a website with its own API server, which displays a list of
-fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
+This project is a monorepo containing a website app with its own API server,
+which displays a list of fancy, useful tools for terminal nerds or, soon to be,
+terminal nerds.
+
+[monorepo]: https://en.wikipedia.org/wiki/Monorepo
 
 > 🎺 **ANNOUCEMENT:** [We are expanding our team]!
 
@@ -9,14 +12,24 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 
 ---
 
-## 🔗 Table of Content
+## 💡 Project idea
 
--   [Technology stack](#technology-stack)
--   [Project structure](#project-structure)
--   [Project team](#project-team)
--   [Contributing to the project](#contributing-to-the-project)
--   [Feedback](#feedback)
--   [Project license](#project-license)
+We use [the Golden Circle from Simon Sinek], to quickly explain the idea of
+this project.
+
+[the golden circle from simon sinek]: https://simonsinek.com/wp-content/uploads/2019/02/The-Golden-Circle.pdf
+
+### Why?
+
+TBA...
+
+### How?
+
+TBA...
+
+### What?
+
+TBA...
 
 ---
 
@@ -60,7 +73,11 @@ as to why these choices.
 
 ### Back-End technology stack
 
+TBA...
+
 ### Front-End technology stack
+
+TBA...
 
 ---
 
@@ -69,13 +86,13 @@ as to why these choices.
 This is a short introduction to this project file tree structure. To learn more
 about them, use the links below:
 
--   [client/](./client) - a directory for the Front-End side of the project
+-   [client/](./client) - a directory for the **Front-End** side of the project
     a website application code.
 
 -   [helpers/](./client) - a directory for the packages _(modules)_ with
     reusable code snippets for both sides.
 
--   [server/](./client) - a directory for the Back-End side of this project
+-   [server/](./client) - a directory for the **Back-End** side of this project
     an API server code.
 
 ---
