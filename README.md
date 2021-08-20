@@ -9,6 +9,7 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 -   [Project structure](#project-structure)
 -   [Project team](#project-team)
 -   [Contributing to the project](#contributing-to-the-project)
+-   [Feedback](#feedback)
 -   [Project license](#project-license)
 
 ---
@@ -93,6 +94,24 @@ about them, use the links below:
 If you wish to contribute to this project, please take a look at the
 [CONTRIBUTING.md](./CONTRIBUTING.md) file. The entire development flow is
 described there.
+
+---
+
+## 🔁 Feedback
+
+**We are open to feedback**. If you have one or any suggestions, feel free to
+[start a discussion] in our project' repository and share your thoughts &
+ideas!
+
+We would love to hear suggestions such as:
+
+-   how to simplify the processes of [developing steps],
+-   making the project more transparent and accessible for everyone,
+-   improving the education part for beginners to transform themselves into a
+    **terminal nerd** easier - _make learning curve less steep_.
+
+[start a discussion]: https://github.com/terminal-nerds/terminal-nerd/discussions/new
+[developing steps]: ./CONTRIBUTING.md#developing-steps
 
 ---
 
