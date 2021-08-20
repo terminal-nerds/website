@@ -2,8 +2,8 @@
 * @xeho91
 
 # Include everything in the repo - from the project root, EXCEPT...
-!client/ @lax0248917
-!server/ @mariushilleke
+!/client/ @lax0248917
+!/server/ @mariushilleke
 
 # Include directories - from the project root
 /client/ @mariushilleke
