@@ -1,0 +1,8 @@
+{
+	"devDependencies": {
+		"markdownlint": "^0.23.1"
+	},
+	"scripts": {
+		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\""
+	}
+}
