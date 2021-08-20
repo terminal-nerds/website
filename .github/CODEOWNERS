@@ -1,6 +1,7 @@
 # Default owner for everything in the repo.
-* @xeho91
+* @terminal-nerds/project-managers
 
-# Include everything in the repo - from the project root, EXCEPT...
-!/client/ @lax0248917
-!/server/ @mariushilleke
+# Specific team designations for front-end and back-end code.
+client/ @terminal-nerds/front-end
+server/ @terminal-nerds/back-end
+helpers/ @terminal-nerds/front-end @terminal-nerds/back-end
