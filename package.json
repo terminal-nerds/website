@@ -1,0 +1,5 @@
+{
+	"devDependencies": {
+		"commitlint": "^13.1.0"
+	}
+}
