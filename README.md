@@ -3,6 +3,12 @@
 This project is a website with its own API server, which displays a list of
 fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 
+> 🎺 **ANNOUCEMENT:** [We are expanding our team]!
+
+[we are expanding our team]: https://github.com/terminal-nerds/terminal-nerd/discussions/25
+
+---
+
 ## 🔗 Table of Content
 
 -   [Technology stack](#technology-stack)
@@ -94,6 +100,12 @@ about them, use the links below:
 If you wish to contribute to this project, please take a look at the
 [CONTRIBUTING.md](./CONTRIBUTING.md) file. The entire development flow is
 described there.
+
+Or... do you wish to be more involved in this project? **How about joining us
+then?**\
+Please take a look at our [annoucement in the discussions], to read more!
+
+[annoucement in the discussions]: https://github.com/terminal-nerds/terminal-nerd/
 
 ---
 
