@@ -9,6 +9,7 @@
 		"url": "https://github.com/Team-LogiDev/terminal-nerd/issues"
 	},
 	"devDependencies": {
+		"eslint": "^7.32.0",
 		"gacp": "^2.10.2"
 	},
 	"scripts": {
