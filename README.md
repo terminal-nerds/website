@@ -7,6 +7,7 @@ fancy, useful tools for terminal nerds or, soon to be, terminal nerds.
 
 -   [Technology stack](#technology-stack)
 -   [Project structure](#project-structure)
+-   [Project team](#project-team)
 -   [Contributing to the project](#contributing-to-the-project)
 -   [Project license](#project-license)
 
@@ -69,6 +70,21 @@ about them, use the links below:
 
 -   [server/](./client) - a directory for the Back-End side of this project
     an API server code.
+
+---
+
+## ☯️ Project team
+
+[@xeho91] - Project Manager\
+[@lax0248917] - core Back-End Leader\
+[@mariushilleke] - core Front-End Leader
+
+> 📝**NOTE:** We are flexible when it comes to roles, it may change over the
+> time.
+
+[@xeho91]: https://github.com/xeho91
+[@lax0248917]: https://github.com/lax0248917
+[@mariushilleke]: https://github.com/mariushilleke
 
 ---
 
