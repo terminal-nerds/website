@@ -1,0 +1,21 @@
+name: Lint Commit Messages
+on: [pull_request]
+# do we need to specify what branches?
+# should run on all branches in my opinion
+
+jobs:
+    commitlint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - uses: wagoid/commitlint-github-action@v4
+              with:
+                  configFile: commitlintrc.js
+                  # this may not be necessary but is suppose to help from getting errors
+                  # on prior commits before adding this feature
+                  firstParent: true
+                  failOnWarnings: true
+                  helpURL: https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%92%8C-Git-commits-convention
+                  token: ${{ github.token }}
