@@ -1,0 +1,5 @@
+{
+	"devDependencies": {
+		"@ls-lint/ls-lint": "^1.10.0"
+	}
+}
