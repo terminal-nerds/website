@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout
+            - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
               with:
                   # Make sure the actual branch is checked out when running on pull requests
@@ -17,7 +17,7 @@ jobs:
                   # This is important to fetch the changes to the previous commit
                   fetch-depth: 0
 
-            - name: Executing Prettier
+            - name: Execute Prettier
               uses: creyD/prettier_action@v3.3
               with:
                   prettier_options: --check \".\"
