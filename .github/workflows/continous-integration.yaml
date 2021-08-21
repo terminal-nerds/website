@@ -1,12 +1,11 @@
 name: Continuous Integration
 
 on:
-    push:
     pull_request:
         branches: [main, develop]
 jobs:
     prettier:
-        name: Checking source code format style with Prettier
+        name: Check code formatting style with Prettier
         runs-on: ubuntu-latest
 
         steps:
