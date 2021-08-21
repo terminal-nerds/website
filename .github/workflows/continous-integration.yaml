@@ -6,6 +6,7 @@ on:
         branches: [main, develop]
 jobs:
     prettier:
+        name: Checking source code format style with Prettier
         runs-on: ubuntu-latest
 
         steps:
@@ -17,7 +18,7 @@ jobs:
                   # This is important to fetch the changes to the previous commit
                   fetch-depth: 0
 
-            - name: Check source code style with Prettier
+            - name: Executing Prettier
               uses: creyD/prettier_action@v3.3
               with:
                   prettier_options: --check \".\"
