@@ -15,6 +15,6 @@
 		"commitlint": "^13.1.0"
 	},
 	"scripts": {
-		"lint:commit": "commitlint"
+		"lint:commit": "commitlint --verbose --from develop --to HEAD"
 	}
 }
