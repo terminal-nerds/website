@@ -1,0 +1,6 @@
+{
+	// https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"prettier.useEditorConfig": true
+}
