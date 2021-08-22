@@ -10,6 +10,7 @@ importers:
       eslint-plugin-prettier: ^3.4.1
       eslint-plugin-promise: ^5.1.0
       eslint-plugin-regexp: ^1.0.0
+      eslint-plugin-xss: ^0.1.10
     devDependencies:
       eslint: 7.32.0
       eslint-config-prettier: 8.3.0_eslint@7.32.0
@@ -17,6 +18,7 @@ importers:
       eslint-plugin-prettier: 3.4.1_94254c01413ebaf1ad99cec97ec78f12
       eslint-plugin-promise: 5.1.0_eslint@7.32.0
       eslint-plugin-regexp: 1.0.0_eslint@7.32.0
+      eslint-plugin-xss: 0.1.10
 
   client:
     specifiers: {}
@@ -316,6 +318,13 @@ packages:
       regexp-ast-analysis: 0.2.4
       regexpp: 3.2.0
       scslre: 0.1.6
+    dev: true
+
+  /eslint-plugin-xss/0.1.10:
+    resolution: {integrity: sha512-Wm2QIokqBq/IYi529xDXf9EOmVoQdAclaTEw1PNk+iyzyTiWssc1dqFz00PuB6nh01vA4phw0dnseY9b3Tsg1w==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      requireindex: 1.1.0
     dev: true
 
   /eslint-scope/5.1.1:
@@ -723,6 +732,11 @@ packages:
   /require-from-string/2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /requireindex/1.1.0:
+    resolution: {integrity: sha1-5UBLgVV+91225JxacgBIk/4D4WI=}
+    engines: {node: '>=0.10.5'}
     dev: true
 
   /resolve-from/4.0.0:

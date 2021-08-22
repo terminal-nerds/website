@@ -44,6 +44,11 @@ const config = defineConfig({
 >>>>>>> 2f8056a (chore(ESLint): ➕ Add `eslint-plugin-regexp`)
 	],
 
+	plugins: [
+		// https://github.com/Rantanen/eslint-plugin-xss
+		"xss"
+	],
+
 	rules: {
 		"max-len": [
 			"error",
@@ -65,6 +70,9 @@ const config = defineConfig({
 		"prefer-named-capture-group": ["error"],
 
 		"func-names": ["error", "as-needed"],
+
+		"xss/no-mixed-html": ["error"],
+		"xss/no-location-href-assign": ["error"],
 	},
 });
 
