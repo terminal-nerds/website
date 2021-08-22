@@ -26,7 +26,12 @@ const config = defineConfig({
 		"!.*",
 	],
 
-	extends: ["eslint:recommended"],
+	extends: [
+		"eslint:recommended",
+
+		// https://github.com/prettier/eslint-config-prettier
+		"prettier",
+	],
 
 	rules: {
 		"max-len": [
