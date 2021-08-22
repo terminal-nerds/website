@@ -11,6 +11,7 @@
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
 	"devDependencies": {
+		"@commitlint/config-conventional": "^13.1.0",
 		"commitlint": "^13.1.0"
 	},
 	"scripts": {
