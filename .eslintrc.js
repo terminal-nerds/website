@@ -29,8 +29,16 @@ const config = defineConfig({
 	extends: [
 		"eslint:recommended",
 
+<<<<<<< HEAD
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
+=======
+		// https://github.com/ota-meshi/eslint-plugin-regexp
+		"plugin:regexp/recommended",
+
+		// https://github.com/prettier/eslint-plugin-prettier
+		"plugin:prettier/recommended",
+>>>>>>> 2f8056a (chore(ESLint): ➕ Add `eslint-plugin-regexp`)
 	],
 
 	rules: {
