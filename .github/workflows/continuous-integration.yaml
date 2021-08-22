@@ -1,7 +1,12 @@
 name: Continuous Integration
+
 on:
     pull_request:
         branches: [main, develop]
+
+env:
+    PNPM_CACHE_FOLDER: .pnpm-store
+
 jobs:
     eslint:
         name: ESLint - statically analyze the JavaScript code
@@ -27,10 +32,9 @@ jobs:
             - name: Cache Node.js modules with pnpm
               uses: actions/cache@v2
               with:
-                  path: ~/.pnpm-store
+                  path: ${{ env.PNPM_CACHE_FOLDER }}
                   key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: |
-                      ${{ runner.os }}-
+                  restore-keys: ${{ runner.os }}-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
