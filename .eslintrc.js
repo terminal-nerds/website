@@ -51,7 +51,7 @@ const config = defineConfig({
 
 	plugins: [
 		// https://github.com/Rantanen/eslint-plugin-xss
-		"xss"
+		"xss",
 	],
 
 	rules: {

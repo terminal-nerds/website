@@ -1,0 +1,42 @@
+name: Continuous Integration
+on:
+    pull_request:
+        branches: [main, develop]
+jobs:
+    eslint:
+        name: ESLint - statically analyze the JavaScript code
+        runs-on: ${{ matrix.os }}
+        timeout-minutes: 5
+        strategy:
+            matrix:
+                node-version: [14.x]
+                pnpm-version: [6.x]
+                os: [ubuntu-latest]
+        steps:
+            - name: Checkout to ${{ github.repository }} repository
+              uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+                  fetch-depth: 0
+
+            - name: Use Node.js version ${{ matrix.node-version }}
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Cache Node.js modules with pnpm
+              uses: actions/cache@v2
+              with:
+                  path: ~/.pnpm-store
+                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: |
+                      ${{ runner.os }}-
+
+            - name: Use pnpm version ${{ matrix.pnpm-version }}
+              uses: pnpm/action-setup@v2.0.1
+              with:
+                  version: ${{ matrix.pnpm-version }}
+                  run_install: true
+
+            - name: Execute ESLint
+              run: pnpm lint:js
