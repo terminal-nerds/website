@@ -11,6 +11,7 @@
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
 	"devDependencies": {
-		"eslint": "^7.32.0"
+		"eslint": "^7.32.0",
+		"eslint-define-config": "^1.0.9"
 	}
 }
