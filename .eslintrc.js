@@ -42,6 +42,9 @@ const config = defineConfig({
 		// https://github.com/xjamundx/eslint-plugin-promise
 		"plugin:promise/recommended",
 
+		// https://github.com/sindresorhus/eslint-plugin-unicorn
+		"plugin:unicorn/recommended",
+
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
 	],
@@ -75,6 +78,9 @@ const config = defineConfig({
 
 		"xss/no-mixed-html": ["error"],
 		"xss/no-location-href-assign": ["error"],
+
+		// NOTE: We're not using ES modules in this project, for now.
+		"unicorn/prefer-module": ["off"],
 	},
 });
 
