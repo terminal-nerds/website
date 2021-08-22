@@ -21,5 +21,8 @@
 		"eslint-plugin-regexp": "^1.0.0",
 		"eslint-plugin-unicorn": "^35.0.0",
 		"eslint-plugin-xss": "^0.1.10"
+	},
+	"scripts": {
+		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts"
 	}
 }
