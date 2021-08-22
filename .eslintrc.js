@@ -1,5 +1,7 @@
 // @ts-check
 
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const defineConfig = require("eslint-define-config").defineConfig;
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -7,6 +9,8 @@ const isProduction = process.env.NODE_ENV === "production";
 // https://eslint.org/docs/user-guide/configuring/
 
 const config = defineConfig({
+	parser: "@typescript-eslint/parser",
+
 	parserOptions: {
 		ecmaVersion: 2021,
 		sourceType: "module",
@@ -29,19 +33,17 @@ const config = defineConfig({
 	extends: [
 		"eslint:recommended",
 
-<<<<<<< HEAD
-		// https://github.com/prettier/eslint-config-prettier
-		"prettier",
-=======
+		// https://github.com/typescript-eslint/typescript-eslint
+		"plugin:@typescript-eslint/recommended",
+
 		// https://github.com/ota-meshi/eslint-plugin-regexp
 		"plugin:regexp/recommended",
 
 		// https://github.com/xjamundx/eslint-plugin-promise
 		"plugin:promise/recommended",
 
-		// https://github.com/prettier/eslint-plugin-prettier
-		"plugin:prettier/recommended",
->>>>>>> 2f8056a (chore(ESLint): ➕ Add `eslint-plugin-regexp`)
+		// https://github.com/prettier/eslint-config-prettier
+		"prettier",
 	],
 
 	plugins: [
