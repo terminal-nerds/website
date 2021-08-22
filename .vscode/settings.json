@@ -1,0 +1,9 @@
+{
+	// https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits
+	"conventionalCommits.emojiFormat": "emoji",
+	"conventionalCommits.gitmoji": true,
+	"conventionalCommits.showEditor": true,
+	"conventionalCommits.scopes": [
+		"VSCode"
+	]
+}
