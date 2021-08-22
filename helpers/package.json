@@ -1,19 +1,12 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"name": "terminal-nerd",
-	"homepage": "https://github.com/terminal-nerds/terminal-nerd",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/helpers",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
 	},
 	"bugs": {
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
-	},
-	"devDependencies": {
-		"commitlint": "^13.1.0"
-	},
-	"scripts": {
-		"lint:commit": "commitlint"
 	}
 }
