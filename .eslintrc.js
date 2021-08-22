@@ -36,6 +36,9 @@ const config = defineConfig({
 		// https://github.com/ota-meshi/eslint-plugin-regexp
 		"plugin:regexp/recommended",
 
+		// https://github.com/xjamundx/eslint-plugin-promise
+		"plugin:promise/recommended",
+
 		// https://github.com/prettier/eslint-plugin-prettier
 		"plugin:prettier/recommended",
 >>>>>>> 2f8056a (chore(ESLint): ➕ Add `eslint-plugin-regexp`)
