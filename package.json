@@ -9,5 +9,11 @@
 	},
 	"bugs": {
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
+	},
+	"devDependencies": {
+		"gacp": "^2.10.2"
+	},
+	"scripts": {
+		"commit": "gacp"
 	}
 }
