@@ -14,8 +14,7 @@ That means:
 -   no Google Analytics,
 -   or whatever else exists these days.
 
-We want to feel safe and our privacy to be respected on the Internet as much as
-well.
+We all want to feel safe on the internet. As well as have our privacy respected.
 
 > Let's be humans, not products.
 
@@ -30,13 +29,13 @@ vulnerability**.
 
 ### Vulnerability Process
 
-1. Your report should be acknowledged within a week _(we are a small team, and
+1. Your report should be acknowledged within seven days _(we are a small team, and
    this project is our hobby, a free-time job)_.
 
 2. The team will investigate and update the issue with relevant information.
 
     If the team does not confirm the report, no further action will be taken. We
-    will inform you back.
+    will be sure to inform you regarding this result.
 
     If the team confirms the report, the team will take action to fix it
     immediately:
