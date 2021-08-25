@@ -9,7 +9,7 @@ env:
 
 jobs:
     commitlint:
-        name: Commitlint - Validate commit messages
+        name: commitlint - validate commit messages
         runs-on: ${{ matrix.os }}
         timeout-minutes: 5
         strategy:
