@@ -1,8 +1,8 @@
 name: Continuous Integration
 
 on:
-    [pull_request]
-
+    pull_request:
+        branches: [main, develop]
 env:
     PNPM_CACHE_FOLDER: .pnpm-store
 
