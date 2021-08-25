@@ -3,6 +3,7 @@ name: Continuous Integration
 on:
     pull_request:
         branches: [main, develop]
+
 env:
     PNPM_CACHE_FOLDER: .pnpm-store
 
@@ -17,7 +18,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository  }} repository
+            - name: Checkout to ${{ github.repository }} repository
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
@@ -42,16 +43,4 @@ jobs:
                   run_install: true
 
             - name: Validating commit messages with commitlint
-                # uses pnpm to run commitlint on messages
               run: pnpm lint:commit
-
-            # Existing config that runs with marketplace github action
-            #   uses: wagoid/commitlint-github-action@v4
-            #   with:
-            #       configFile: commitlintrc.js
-            #       # this may not be necessary but is suppose to help from getting errors
-            #       # on prior commits before adding this feature
-            #       firstParent: true
-            #       failOnWarnings: true
-            #       helpURL: https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%92%8C-Git-commits-convention
-            #       token: ${{ github.token }}
