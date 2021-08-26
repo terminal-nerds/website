@@ -42,5 +42,5 @@ jobs:
                   version: ${{ matrix.pnpm-version }}
                   run_install: true
 
-            - name: Validating commit messages with commitlint
-              run: pnpm lint:commit
+            - name: Execute commitlint
+              run: pnpm commitlint --verbose --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
