@@ -42,11 +42,11 @@ jobs:
                   version: ${{ matrix.pnpm-version }}
                   run_install: true
 
-            - name: Execute commitlint script
-              run: pnpm lint:commit
+            - name: Execute commitlint
+              run: pnpm commitlint --verbose --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
 
     prettier:
-        name: Prettier - Check code formatting style
+        name: Prettier - check code formatting style
         runs-on: ${{ matrix.os }}
         timeout-minutes: 5
         strategy:
