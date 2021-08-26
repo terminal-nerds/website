@@ -9,7 +9,8 @@ const commitlintConfig = {
 	// https://github.com/conventional-changelog/commitlint/
 	extends: ["@commitlint/config-conventional"],
 
-	helpUrl: "https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%92%8C-Git-commits-convention"
+	helpUrl:
+		"https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%92%8C-Git-commits-convention",
 };
 
 module.exports = commitlintConfig;
