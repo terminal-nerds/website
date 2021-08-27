@@ -7,13 +7,13 @@ importers:
       '@commitlint/config-conventional': ^13.1.0
       commitlint: ^13.1.0
       gacp: ^2.10.2
-      markdownlint: ^0.23.1
+      markdownlint: ^0.24.0
       prettier: ^2.3.2
     devDependencies:
       '@commitlint/config-conventional': 13.1.0
       commitlint: 13.1.0
       gacp: 2.10.2
-      markdownlint: 0.23.1
+      markdownlint: 0.24.0
       prettier: 2.3.2
 
   client:
@@ -1091,8 +1091,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /markdown-it/12.0.4:
-    resolution: {integrity: sha512-34RwOXZT8kyuOJy25oJNJoulO8L0bTHYWXcdZBYZqFnjIy3NgjeoM3FmPXIOFQ26/lSHYMr8oc62B6adxXcb3Q==}
+  /markdown-it/12.2.0:
+    resolution: {integrity: sha512-Wjws+uCrVQRqOoJvze4HCqkKl1AsSh95iFAeQDwnyfxM09divCBSXlDR1uTvyUP3Grzpn4Ru8GeCxYPM8vkCQg==}
     hasBin: true
     dependencies:
       argparse: 2.0.1
@@ -1102,11 +1102,11 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdownlint/0.23.1:
-    resolution: {integrity: sha512-iOEwhDfNmq2IJlaA8mzEkHYUi/Hwoa6Ss+HO5jkwUR6wQ4quFr0WzSx+Z9rsWZKUaPbyirIdL1zGmJRkWawr4Q==}
+  /markdownlint/0.24.0:
+    resolution: {integrity: sha512-OJIGsGFV/rC9irI5E1FMy6v9hdACSwaa+EN3224Y5KG8zj2EYzdHOw0pOJovIYmjNfEZ9BtxUY4P7uYHTSNnbQ==}
     engines: {node: '>=10'}
     dependencies:
-      markdown-it: 12.0.4
+      markdown-it: 12.2.0
     dev: true
 
   /mdurl/1.0.1:
