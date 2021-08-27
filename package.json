@@ -14,9 +14,11 @@
 		"@commitlint/config-conventional": "^13.1.0",
 		"commitlint": "^13.1.0",
 		"markdownlint": "^0.23.1",
+		"gacp": "^2.10.2",
 		"prettier": "^2.3.2"
 	},
 	"scripts": {
+		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\""

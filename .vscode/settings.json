@@ -1,5 +1,8 @@
 {
-	// https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+	"conventionalCommits.emojiFormat": "emoji",
+	"conventionalCommits.gitmoji": true,
+	"conventionalCommits.showEditor": true,
+	"conventionalCommits.scopes": ["VSCode"],
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"prettier.useEditorConfig": true
