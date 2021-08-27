@@ -1,4 +1,5 @@
 name: Continuous Integration
+
 on:
     pull_request:
         branches: [main, develop]
@@ -114,9 +115,6 @@ jobs:
               with:
                   version: ${{ matrix.pnpm-version }}
                   run_install: true
-
-            - name: Install markdownlint-cli
-              run: pnpm install markdownlint-cli
 
             - name: Execute markdownlint
               run: pnpm markdownlint **/*.md --ignore node_modules
