@@ -10,6 +10,7 @@ as to why these choices.
 | ![Node.js logomark] [Node.js]       | As core JavaScript runtime for this project development. It offers stability and a vibrant community collection of packages.                                                                                |
 | ![pnpm logomark] [pnpm]             | As primary [Node.js] package manager, because it is fast, efficient, disk-saving, and has a feature - [workspaces] - built-in support for [monorepo] without using third tools.                             |
 | ![TypeScript logomark] [TypeScript] | As the primary programming language because it offers a fantastic developer experience thanks to its toolings, typings and helps find possible bugs we may not notice.                                      |
+| ![Jest logomark] [Jest]             | As the core JavaScript testing library because it focuses on simplicity and can support any side of our project.                                                                                            |
 
 [git]: https://git-scm.com/
 [git logomark]: https://api.iconify.design/simple-icons:git.svg "Git logomark"
@@ -24,6 +25,8 @@ as to why these choices.
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [typescript]: https://www.typescriptlang.org/
 [typescript logomark]: https://api.iconify.design/simple-icons:typescript.svg "TypeScript logomark"
+[jest]: https://jestjs.io/
+[jest logomark]: https://api.iconify.design/simple-icons:jest.svg "Jest logomark"
 
 ### Back-End technology stack
 
