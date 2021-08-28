@@ -47,4 +47,30 @@ This combination of technologies will allow us to create a CRUD API that will be
 
 ### Front-End technology stack
 
-TBA...
+| Technology                                    | Reason                                                                                                                                                                                                      |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Vue logomark] [Vue]                         | As a core Javascript User Interface Library, because it is approachable, versatile, and performant. Its rich community ecosystem should allow us to integrate well with other tools.                        |
+| ![Nuxt logomark] [Nuxt]                       | A framework for enhanting developers experience in building web applications with [Vue].                                                                                                                    |
+| ![PostCSS logomark] [PostCSS]                 | For transforming CSS with its plugins. It will help transpile future CSS and automate some of the developing parts to help focus less on the details such as cross-browser compatibility.                   |
+| ![Sass logomark] [Sass]                       | It is the most mature, stable, compatible and robust CSS pre-processor. Its rich features will help reduce some of the developing parts in writing styles to keep code more clean, readable and organized.  |
+| ![Tailwind CSS logomark] [tailwind css]       | As a temporary CSS library, to speed up build any design directly in the markup. It should be flexible to be replaced by our own CSS library in the future.                                                 |
+| ![Storybook logomark] [Storybook]             | It will help build, document and test User Interface components and pages in isolation. Also, it will allow us to supercharge our workflow with a better organization and develop hard-to-reach edge cases. |
+| ![Testing Library logomark] [Testing Library] | Community-driven testing utilities that encourage good testing practices. It has support for [Vue] as well.                                                                                                 |
+| ![Vercel logomark] [Vercel]                   | It offers an easy developer experience for deploying, shipping and previewing Front-End applications. It also should integrate well with the other technology stack we're going to use in this project.     |
+
+[vue]: https://v3.vuejs.org
+[vue logomark]: https://api.iconify.design/simple-icons:vuedotjs.svg "Vue logomark"
+[nuxt]: https://nuxtjs.org
+[nuxt logomark]: https://api.iconify.design/simple-icons:nuxtdotjs.svg "Nuxt logomark"
+[postcss]: https://postcss.org
+[postcss logomark]: https://api.iconify.design/simple-icons:postcss.svg "PostCSS logomark"
+[sass]: https://sass-lang.com/
+[sass logomark]: https://api.iconify.design/simple-icons:sass.svg "Sass logomark"
+[tailwind css]: https://github.com/tailwindlabs/tailwindcss
+[tailwind css logomark]: https://api.iconify.design/simple-icons:tailwindcss.svg "Tailwind CSS logomark"
+[storybook]: https://storybook.js.org
+[storybook logomark]: https://api.iconify.design/simple-icons:storybook.svg "Storybook logomark"
+[testing library]: https://testing-library.com
+[testing library logomark]: https://api.iconify.design/simple-icons:testinglibrary.svg "Testing Library logomark"
+[vercel]: https://vercel.com
+[vercel logomark]: https://api.iconify.design/simple-icons:vercel.svg "Vercel logomark"
