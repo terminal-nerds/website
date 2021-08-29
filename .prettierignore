@@ -1,5 +1,8 @@
 # ======== DIRECTORIES ========
 
+# Built outputs
+build/
+
 # Node.js dependencies which can be installed
 node_modules/
 
