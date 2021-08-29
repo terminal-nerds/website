@@ -12,11 +12,14 @@
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^13.1.0",
+		"@types/node": "^16.7.5",
 		"commitlint": "^13.1.0",
 		"gacp": "^2.10.2",
 		"markdownlint": "^0.24.0",
 		"markdownlint-cli": "^0.28.1",
-		"prettier": "^2.3.2"
+		"prettier": "^2.3.2",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.2"
 	},
 	"scripts": {
 		"commit": "gacp",
