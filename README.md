@@ -13,20 +13,20 @@ as to why these choices.
 | ![Jest logomark] [Jest]             | As the core JavaScript testing library because it focuses on simplicity and can support any side of our project.                                                                                            |
 
 [git]: https://git-scm.com/
-[git logomark]: https://api.iconify.design/simple-icons:git.svg "Git logomark"
+[git logomark]: https://api.iconify.design/simple-icons:git.svg?color=%2394f "Git logomark"
 [github]: https://github.com/
-[github logomark]: https://api.iconify.design/simple-icons:github.svg "GitHub logomark"
+[github logomark]: https://api.iconify.design/simple-icons:github.svg?color=%2394f "GitHub logomark"
 [features]: https://github.com/features
 [node.js]: https://nodejs.org/en/
-[node.js logomark]: https://api.iconify.design/simple-icons:nodejs.svg "Node.js logomark"
+[node.js logomark]: https://api.iconify.design/simple-icons:nodejs.svg?color=%2394f "Node.js logomark"
 [pnpm]: https://pnpm.io/
-[pnpm logomark]: https://api.iconify.design/simple-icons:pnpm.svg "pnpm logomark"
+[pnpm logomark]: https://api.iconify.design/simple-icons:pnpm.svg?color=%2394f "pnpm logomark"
 [workspaces]: https://pnpm.io/workspaces
 [monorepo]: https://en.wikipedia.org/wiki/Monorepo
 [typescript]: https://www.typescriptlang.org/
-[typescript logomark]: https://api.iconify.design/simple-icons:typescript.svg "TypeScript logomark"
+[typescript logomark]: https://api.iconify.design/simple-icons:typescript.svg?color=%2394f "TypeScript logomark"
 [jest]: https://jestjs.io/
-[jest logomark]: https://api.iconify.design/simple-icons:jest.svg "Jest logomark"
+[jest logomark]: https://api.iconify.design/simple-icons:jest.svg?color=%2394f "Jest logomark"
 
 ### Back-End technology stack
 
@@ -39,11 +39,11 @@ as to why these choices.
 This combination of technologies will allow us to create a CRUD API that will be utilized by the front-end UI.
 
 [express]: https://expressjs.com
-[express logomark]: https://api.iconify.design/simple-icons:express.svg "Express logomark"
+[express logomark]: https://api.iconify.design/simple-icons:express.svg?color=%2394f "Express logomark"
 [mongodb]: https://mongodb.com
-[mongodb logomark]: https://api.iconify.design/simple-icons:mongodb.svg "mongodb logomark"
+[mongodb logomark]: https://api.iconify.design/simple-icons:mongodb.svg?color=%2394f "mongodb logomark"
 [swagger]: https://www.npmjs.com/package/swagger-autogen
-[swagger logomark]: https://api.iconify.design/simple-icons:swagger.svg "Swagger logomark"
+[swagger logomark]: https://api.iconify.design/simple-icons:swagger.svg?color=%2394f "Swagger logomark"
 
 ### Front-End technology stack
 
@@ -59,18 +59,18 @@ This combination of technologies will allow us to create a CRUD API that will be
 | ![Vercel logomark] [Vercel]                   | It offers an easy developer experience for deploying, shipping and previewing Front-End applications. It also should integrate well with the other technology stack we're going to use in this project.     |
 
 [vue]: https://v3.vuejs.org
-[vue logomark]: https://api.iconify.design/simple-icons:vuedotjs.svg "Vue logomark"
+[vue logomark]: https://api.iconify.design/simple-icons:vuedotjs.svg?color=%2394f "Vue logomark"
 [nuxt]: https://nuxtjs.org
-[nuxt logomark]: https://api.iconify.design/simple-icons:nuxtdotjs.svg "Nuxt logomark"
+[nuxt logomark]: https://api.iconify.design/simple-icons:nuxtdotjs.svg?color=%2394f "Nuxt logomark"
 [postcss]: https://postcss.org
-[postcss logomark]: https://api.iconify.design/simple-icons:postcss.svg "PostCSS logomark"
+[postcss logomark]: https://api.iconify.design/simple-icons:postcss.svg?color=%2394f "PostCSS logomark"
 [sass]: https://sass-lang.com/
-[sass logomark]: https://api.iconify.design/simple-icons:sass.svg "Sass logomark"
+[sass logomark]: https://api.iconify.design/simple-icons:sass.svg?color=%2394f "Sass logomark"
 [tailwind css]: https://github.com/tailwindlabs/tailwindcss
-[tailwind css logomark]: https://api.iconify.design/simple-icons:tailwindcss.svg "Tailwind CSS logomark"
+[tailwind css logomark]: https://api.iconify.design/simple-icons:tailwindcss.svg?color=%2394f "Tailwind CSS logomark"
 [storybook]: https://storybook.js.org
-[storybook logomark]: https://api.iconify.design/simple-icons:storybook.svg "Storybook logomark"
+[storybook logomark]: https://api.iconify.design/simple-icons:storybook.svg?color=%2394f "Storybook logomark"
 [testing library]: https://testing-library.com
-[testing library logomark]: https://api.iconify.design/simple-icons:testinglibrary.svg "Testing Library logomark"
+[testing library logomark]: https://api.iconify.design/simple-icons:testinglibrary.svg?color=%2394f "Testing Library logomark"
 [vercel]: https://vercel.com
-[vercel logomark]: https://api.iconify.design/simple-icons:vercel.svg "Vercel logomark"
+[vercel logomark]: https://api.iconify.design/simple-icons:vercel.svg?color=%2394f "Vercel logomark"
