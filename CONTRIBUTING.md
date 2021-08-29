@@ -38,6 +38,18 @@ They're supposed to help all of us, to make collaboration and coding an
 joyous adventure. So we did our best to simplify the processes as much as
 possible.
 
+### Prerequisities
+
+Below are the versions of the tools, which we **can't** control. Make sure you
+are using these. If you use any other major versions, we can't guarantee that
+they will not break anything, thus working correctly 100%.
+
+| Tool    | version                        |
+| ------- | ------------------------------ |
+| Git     | 2.x                            |
+| Node.js | LTS (Long Term Support) - 14.x |
+| pnpm    | 6.x                            |
+
 ### [Coding style guidelines]
 
 We focus on **code readability**. Take a look at our 📔 [coding style guidelines]
