@@ -21,15 +21,6 @@ By contributing to this project, **you agree to abide by its terms**.
 
 ---
 
-## 🌟 Our philosophy
-
-We aim to create a **beginner-friendly and _fully transparent_ open-source
-community project with a healthy atmosphere**.\
-We want to treat novices in the same way we wish we were treated when we began
-our adventure in writing code.
-
----
-
 ## 👣 Developing steps
 
 Before you decide to contribute, **please review our developing steps
