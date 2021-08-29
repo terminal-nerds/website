@@ -34,7 +34,7 @@ our adventure in writing code.
 
 Before you decide to contribute, **please review our developing steps
 quickly**.\
-They're supposed to help all of us, to make collaboration and coding an
+They're supposed to help all of us, to make collaboration and coding a
 joyous adventure. So we did our best to simplify the processes as much as
 possible.
 
@@ -53,7 +53,7 @@ they will not break anything, thus working correctly 100%.
 ### [Coding style guidelines]
 
 We focus on **code readability**. Take a look at our 📔 [coding style guidelines]
-on our Wiki page for some hints. This will also save our time during the Code
+on our Wiki page for some hints. This will also save your time during the Code
 Reviewing _(Pull Requests)_ process.
 
 [coding style guidelines]: https://github.com/terminal-nerds/terminal-nerd/wiki/coding-style-guidelines
@@ -65,8 +65,9 @@ manageable.
 
 #### [Git flow]
 
-Take a look at the 🫒 [Git flow] page on our Wiki in this project' repository.
-It thoroughly explains it and provides instructions on creating a new branch.
+Take a look at the 🫒 [Git flow] page on our Wiki in this project's repository.
+It thoroughly explains [Git flow] and provides instructions on creating a new
+branch.
 
 [git flow]: https://github.com/terminal-nerds/terminal-nerd/wiki/🫒-Git-flow
 
@@ -76,8 +77,8 @@ It thoroughly explains it and provides instructions on creating a new branch.
 
 Take a look at the 💌 [Git commits convention] page on our Wiki in this
 project' repository.
-It thoroughly explains it and provides instructions on how to write the commit
-messages with our recommended tools.
+It thoroughly explains what the 💌 [Git commits convention] is and provides
+instructions on how to write the commit messages with our recommended tools.
 
 [conventional commits shield]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=for-the-badge
 [conventional commits]: https://conventionalcommits.org "Conventional commits convention"
@@ -87,7 +88,7 @@ messages with our recommended tools.
 
 ### [Scripts]
 
-Take a look at the 🧰 [Scripts] page on our Wiki in this project' repository.
+Take a look at the 🧰 [Scripts] page on our Wiki in this project's repository.
 We listed all of the scripts available for this project with explanations.
 
 [scripts]: https://github.com/terminal-nerds/terminal-nerd/wiki/scripts
