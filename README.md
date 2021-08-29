@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041 -->
 ## 📂 Project directory structure
 
 > 👉 **REMEMBER**:
@@ -36,5 +37,4 @@
 | ⚙️ [package.json](./package.json)               | A configuration file for Node.js, used to give information to its package manager that allows it to identify the project as well as handle the project's dependencies. [Learn more](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/)                                                                             |
 | ⚙️ [pnpm-lock.yaml](./pnpm-lock.yaml)           | A [pnpm](https://pnpm.io/) lockfile which enforces consistent installation and resolution between project environments. It is generated automatically and you should never manually modify this file. Also, **you should always commit this file!** [Learn more](https://pnpm.io/git#lockfiles)                                                     |
 | ⚙️ [pnpm-workspace.yaml](./pnpm-workspace.yaml) | A configuration file for the [pnpm](https://pnpm.io/) workspace - monorepo. [Learn more](https://pnpm.io/workspaces)                                                                                                                                                                                                                                |
-| 📝 [README.md](./README.md)                     | A documentation file, which is an introduction presentation this project. It is always visible.                                                                                                                                                                                                                                                     |
 | 📝 [SECURITY.md](./SECURITY.md)                 | A documentation file with project's security policy. It also provides instructions on how to report a vulnerability. [Learn more](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository#about-security-policies)                                                                                     |

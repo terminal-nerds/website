@@ -1,8 +1,9 @@
-# [GitHub]
+# ![GitHub logomark] [GitHub]
 
 This directory is for the configuration regarding our repository on the
 [GitHub].
 
+[github logomark]: https://api.iconify.design/simple-icons:github.svg
 [github]: https://docs.github.com/
 
 ## 📂 Directory structure

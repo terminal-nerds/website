@@ -1,7 +1,8 @@
-# [Visual Studio Code]
+# ![Visual Studio Code logomark] [Visual Studio Code]
 
 This directory is for the configuration regarding the [Visual Studio Code] IDE editor.
 
+[visual studio code logomark]: https://api.iconify.design/simple-icons/visualstudiocode.svg?color=%2394f
 [visual studio code]: https://code.visualstudio.com/
 
 ## 📂 Directory structure
