@@ -8,6 +8,18 @@ terminal nerds_.
 
 ---
 
+## 📚 [Wiki]
+
+**We put a lot of effort into our project [Wiki].** If you find within our
+project an abbreviation or some jargon you don't understand, please take a look
+at our [Dictionary page] on the Wiki. There's a chance you may find a short
+explanation there.
+
+[wiki]: https://github.com/terminal-nerds/terminal-nerd/wiki
+[dictionary page]: https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%93%93-Dictionary
+
+---
+
 ## 🌟 Our philosophy
 
 We aim to create a **beginner-friendly and _fully transparent_ open-source
@@ -21,23 +33,7 @@ Placeholder for project idea
 
 ---
 
-## 📚 [Wiki]
-
-**We put a lot of effort into on our project [Wiki].** If you find within our
-project an abbreviation or some jargon you don't understand, please take a look
-at our [Dictionary page] on the Wiki. There's a chance you may find a short
-explanation there.
-
-[wiki]: https://github.com/terminal-nerds/terminal-nerd/wiki
-[dictionary page]: https://github.com/terminal-nerds/terminal-nerd/wiki/%F0%9F%93%93-Dictionary
-
----
-
 Placeholder for technology stack
-
----
-
-Placeholder for project structure
 
 ---
 
@@ -58,6 +54,10 @@ then?**\
 ---
 
 Placeholder for project license
+
+---
+
+Placeholder for security policy
 
 ---
 
@@ -84,3 +84,7 @@ We would love to hear suggestions such as:
     **terminal nerd** easier - _make learning curve less steep_.
 
 [start a discussion]: https://github.com/terminal-nerds/terminal-nerd/discussions/new
+
+---
+
+Placeholder for project root directory structure
