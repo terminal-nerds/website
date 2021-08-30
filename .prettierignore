@@ -1,0 +1,9 @@
+# ======== DIRECTORIES ========
+
+# Node.js dependencies which can be installed
+node_modules/
+
+# ======== FILES ========
+
+# pnpm' lock-file, because it is generated automatically
+pnpm-lock.yaml
