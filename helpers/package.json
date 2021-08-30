@@ -8,5 +8,6 @@
 	},
 	"bugs": {
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
-	}
+	},
+	"type": "module"
 }

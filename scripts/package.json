@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"name": "terminal-nerd-server",
-	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/server",
+	"name": "terminal-nerd-client",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/client",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
@@ -10,5 +10,8 @@
 	"bugs": {
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
-	"type": "module"
+	"type": "module",
+	"scripts": {
+		"build": "tsc"
+	}
 }
