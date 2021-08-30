@@ -90,4 +90,5 @@ We would love to hear suggestions such as:
 ---
 
 Placeholder for project root directory structure
->>>>>>> develop
+
+> > > > > > > develop
