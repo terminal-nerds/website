@@ -53,7 +53,13 @@ then?**\
 
 ---
 
-Placeholder for project license
+## ⚖️ Project license
+
+[![license shield]](./LICENSE.md)
+
+**The code** is licensed under the [MIT license](./LICENSE).
+
+[license shield]: https://img.shields.io/github/license/terminal-nerds/terminal-nerd?style=for-the-badge
 
 ---
 
