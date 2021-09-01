@@ -12,6 +12,7 @@
 	},
 	"type": "module",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"start": "node ./build/example.js"
 	}
 }
