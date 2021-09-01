@@ -36,6 +36,7 @@
 
 		/* Language and Environment */
 		"target": "ESNext",
+		"lib": ["ESNext"],
 
 		/* Compiler Diagnostics */
 		"explainFiles": true,
