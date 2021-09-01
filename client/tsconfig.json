@@ -1,0 +1,16 @@
+/* https://www.typescriptlang.org/tsconfig */
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		/* Modules */
+		"types": [],
+
+		/* Emit */
+		"declaration": false,
+		"outDir": "build/",
+
+		/* Language and Environment */
+		"lib": ["DOM", "ESNext"]
+	}
+}
