@@ -1,6 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
+	"name": "@terminal-nerd/helpers",
+	"version": "1.0.0",
 	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/helpers",
 	"repository": {
 		"type": "git",
@@ -10,6 +12,7 @@
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
 	"type": "module",
+	"main": "build/index.js",
 	"scripts": {
 		"build": "tsc"
 	}

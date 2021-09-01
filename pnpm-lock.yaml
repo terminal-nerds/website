@@ -25,13 +25,22 @@ importers:
       typescript: 4.4.2
 
   client:
-    specifiers: {}
+    specifiers:
+      '@terminal-nerd/helpers': workspace:*
+    devDependencies:
+      '@terminal-nerd/helpers': link:../helpers
 
   helpers:
     specifiers: {}
 
-  server:
+  scripts:
     specifiers: {}
+
+  server:
+    specifiers:
+      '@terminal-nerd/helpers': workspace:*
+    devDependencies:
+      '@terminal-nerd/helpers': link:../helpers
 
 packages:
 
