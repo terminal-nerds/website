@@ -8,5 +8,6 @@
 	"prettier.useEditorConfig": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.markdownlint": true
-	}
+	},
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
