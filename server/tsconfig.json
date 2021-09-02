@@ -9,5 +9,7 @@
 		/* Emit */
 		"declaration": false,
 		"outDir": "build/"
-	}
+	},
+	"include": ["source/"],
+	"exclude": ["node_modules/"]
 }

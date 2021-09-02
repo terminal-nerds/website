@@ -1,8 +1,8 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"name": "terminal-nerd-client",
-	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/client",
+	"name": "@terminal-nerd/scripts",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/scripts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
