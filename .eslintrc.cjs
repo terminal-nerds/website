@@ -78,9 +78,6 @@ const config = defineConfig({
 
 		"xss/no-mixed-html": ["error"],
 		"xss/no-location-href-assign": ["error"],
-
-		// NOTE: We're not using ES modules in this project, for now.
-		"unicorn/prefer-module": ["off"],
 	},
 });
 
