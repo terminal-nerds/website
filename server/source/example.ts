@@ -1,7 +1,7 @@
-import { example } from "@terminal-nerd/helpers";
+import { example } from "@terminal-nerd/common";
 
 export function run() {
-	example();
+	example({ name: "Not-Nerd", age: 9 });
 	console.log("Server is running!");
 }
 

@@ -12,5 +12,7 @@
 
 		/* Language and Environment */
 		"lib": ["DOM", "ESNext"]
-	}
+	},
+	"include": ["source/**/*"],
+	"exclude": ["node_modules/"]
 }

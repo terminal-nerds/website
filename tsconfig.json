@@ -39,8 +39,8 @@
 		"lib": ["ESNext"],
 
 		/* Compiler Diagnostics */
-		"explainFiles": true,
-		"traceResolution": true,
+		"explainFiles": false,
+		"traceResolution": false,
 
 		/* Output Formatting */
 		"noErrorTruncation": true,

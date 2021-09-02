@@ -26,11 +26,11 @@ importers:
 
   client:
     specifiers:
-      '@terminal-nerd/helpers': workspace:*
+      '@terminal-nerd/common': workspace:*
     devDependencies:
-      '@terminal-nerd/helpers': link:../helpers
+      '@terminal-nerd/common': link:../common
 
-  helpers:
+  common:
     specifiers: {}
 
   scripts:
@@ -38,9 +38,9 @@ importers:
 
   server:
     specifiers:
-      '@terminal-nerd/helpers': workspace:*
+      '@terminal-nerd/common': workspace:*
     devDependencies:
-      '@terminal-nerd/helpers': link:../helpers
+      '@terminal-nerd/common': link:../common
 
 packages:
 

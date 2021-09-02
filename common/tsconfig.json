@@ -5,9 +5,17 @@
 	"compilerOptions": {
 		/* Modules */
 		"types": ["node"],
+		"rootDir": "./source",
 
 		/* Emit */
 		"declaration": true,
-		"outDir": "build/"
-	}
+		"declarationMap": true,
+		"outDir": "build/",
+
+		/* Projects */
+		"composite": true,
+		"tsBuildInfoFile": "./build/.tsbuildinfo"
+	},
+	"include": ["source/"],
+	"exclude": ["node_modules/"]
 }
