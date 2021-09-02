@@ -1,4 +1,5 @@
 packages:
     - "client/**"
-    - "helpers/**"
+    - "common/**"
+    - "scripts/**"
     - "server/**"

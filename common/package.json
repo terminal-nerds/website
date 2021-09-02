@@ -1,0 +1,36 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"name": "@terminal-nerd/common",
+	"version": "1.0.0",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/common",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
+	},
+	"type": "module",
+	"exports": {
+		"./helpers": "./build/helpers/index.js",
+		"./types": "./build/types/index.js",
+		"./package.json": "./package.json"
+	},
+	"typesVersions": {
+		"*": {
+			"helpers": [
+				"build/helpers/index.d.ts"
+			],
+			"types": [
+				"build/types/index.d.ts"
+			]
+		}
+	},
+	"files": [
+		"build/**/*"
+	],
+	"scripts": {
+		"build": "tsc --build"
+	}
+}

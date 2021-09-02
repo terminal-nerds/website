@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"joshbolduc.commitlint",
+		"vivaxy.vscode-conventional-commits",
+		"DavidAnson.vscode-markdownlint"
+	]
+}

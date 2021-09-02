@@ -1,0 +1,21 @@
+/* https://www.typescriptlang.org/tsconfig */
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		/* Modules */
+		"types": ["node"],
+		"rootDir": "./source",
+
+		/* Emit */
+		"declaration": true,
+		"declarationMap": true,
+		"outDir": "build/",
+
+		/* Projects */
+		"composite": true,
+		"tsBuildInfoFile": "./build/.tsbuildinfo"
+	},
+	"include": ["source/"],
+	"exclude": ["node_modules/"]
+}

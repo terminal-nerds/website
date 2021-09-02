@@ -1,7 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/package",
 	"private": true,
-	"name": "terminal-nerd-client",
+	"name": "@terminal-nerd/client",
 	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/client",
 	"repository": {
 		"type": "git",
@@ -9,5 +9,13 @@
 	},
 	"bugs": {
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "tsc --build",
+		"start": "node ./build/example.js"
+	},
+	"devDependencies": {
+		"@terminal-nerd/common": "workspace:*"
 	}
 }
