@@ -19,8 +19,12 @@
 	},
 	"typesVersions": {
 		"*": {
-			"helpers": ["build/helpers/index.d.ts"],
-			"types": ["build/types/index.d.ts"]
+			"helpers": [
+				"build/helpers/index.d.ts"
+			],
+			"types": [
+				"build/types/index.d.ts"
+			]
 		}
 	},
 	"files": [
