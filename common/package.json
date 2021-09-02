@@ -12,12 +12,16 @@
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
 	"type": "module",
-	"main": "",
 	"exports": {
-		"./*": "./build/index.js",
 		"./helpers": "./build/helpers/index.js",
 		"./types": "./build/types/index.js",
 		"./package.json": "./package.json"
+	},
+	"typesVersions": {
+		"*": {
+			"helpers": ["build/helpers/index.d.ts"],
+			"types": ["build/types/index.d.ts"]
+		}
 	},
 	"files": [
 		"build/**/*"

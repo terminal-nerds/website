@@ -1,4 +1,4 @@
-import { example } from "@terminal-nerd/common";
+import { example } from "@terminal-nerd/common/helpers";
 
 export function run() {
 	example({ name: "Not-Nerd", age: 9 });
