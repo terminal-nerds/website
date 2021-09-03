@@ -26,6 +26,7 @@
 		"eslint-plugin-sonarjs": "^0.10.0",
 		"eslint-plugin-unicorn": "^35.0.0",
 		"eslint-plugin-xss": "^0.1.10",
+		"eslint-plugin-yml": "^0.10.0",
 		"gacp": "^2.10.2",
 		"markdownlint": "^0.24.0",
 		"markdownlint-cli": "^0.28.1",
@@ -38,7 +39,7 @@
 		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
-		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts",
+		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts,.yml,.yaml",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
 		"start": "pnpm run start --filter ./"
 	}

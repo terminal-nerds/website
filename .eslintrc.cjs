@@ -14,6 +14,13 @@ const config = defineConfig({
 		sourceType: "module",
 	},
 
+	overrides: [
+		{
+			files: ["*.yaml", "*.yml"],
+			parser: "yaml-eslint-parser",
+		},
+	],
+
 	env: {
 		es2021: true,
 		node: true,
@@ -44,6 +51,9 @@ const config = defineConfig({
 
 		// https://github.com/SonarSource/eslint-plugin-sonarjs
 		"plugin:sonarjs/recommended",
+
+		// https://github.com/SonarSource/eslint-plugin-sonarjs
+		"plugin:yml/recommended",
 
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
