@@ -16,6 +16,10 @@ const config = defineConfig({
 
 	overrides: [
 		{
+			files: ["*.json", "*.json5"],
+			parser: "jsonc-eslint-parser",
+		},
+		{
 			files: ["*.yaml", "*.yml"],
 			parser: "yaml-eslint-parser",
 		},
@@ -39,6 +43,9 @@ const config = defineConfig({
 
 		// https://github.com/typescript-eslint/typescript-eslint
 		"plugin:@typescript-eslint/recommended",
+
+		// https://github.com/ota-meshi/eslint-plugin-jsonc
+		"plugin:jsonc/recommended-with-jsonc",
 
 		// https://github.com/ota-meshi/eslint-plugin-regexp
 		"plugin:regexp/recommended",

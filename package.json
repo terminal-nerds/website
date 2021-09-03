@@ -20,6 +20,7 @@
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-define-config": "^1.0.9",
+		"eslint-plugin-jsonc": "^1.6.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-promise": "^5.1.0",
 		"eslint-plugin-regexp": "^1.1.0",
@@ -39,7 +40,7 @@
 		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
-		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts,.yml,.yaml",
+		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts,.yaml,.yml,.json",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
 		"start": "pnpm run start --filter ./"
 	}
