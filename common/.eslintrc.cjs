@@ -6,7 +6,7 @@ const config = defineConfig({
 	extends: ["../.eslintrc.cjs"],
 
 	env: {
-		es2021: true,
+		"es2021": true,
 		"shared-node-browser": true,
 	},
 });
