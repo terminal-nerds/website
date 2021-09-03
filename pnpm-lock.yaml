@@ -15,6 +15,7 @@ importers:
       eslint-plugin-prettier: ^4.0.0
       eslint-plugin-promise: ^5.1.0
       eslint-plugin-regexp: ^1.1.0
+      eslint-plugin-sonarjs: ^0.10.0
       eslint-plugin-unicorn: ^35.0.0
       eslint-plugin-xss: ^0.1.10
       gacp: ^2.10.2
@@ -35,6 +36,7 @@ importers:
       eslint-plugin-prettier: 4.0.0_5a48a349ffec60f5257b5f148f5199c3
       eslint-plugin-promise: 5.1.0_eslint@7.32.0
       eslint-plugin-regexp: 1.1.0_eslint@7.32.0
+      eslint-plugin-sonarjs: 0.10.0_eslint@7.32.0
       eslint-plugin-unicorn: 35.0.0_eslint@7.32.0
       eslint-plugin-xss: 0.1.10
       gacp: 2.10.2
@@ -1255,6 +1257,15 @@ packages:
       regexp-ast-analysis: 0.2.4
       regexpp: 3.2.0
       scslre: 0.1.6
+    dev: true
+
+  /eslint-plugin-sonarjs/0.10.0_eslint@7.32.0:
+    resolution: {integrity: sha512-FBRIBmWQh2UAfuLSnuYEfmle33jIup9hfkR0X8pkfjeCKNpHUG8qyZI63ahs3aw8CJrv47QJ9ccdK3ZxKH016A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+    dependencies:
+      eslint: 7.32.0
     dev: true
 
   /eslint-plugin-unicorn/35.0.0_eslint@7.32.0:

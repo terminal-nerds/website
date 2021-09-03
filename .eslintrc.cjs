@@ -42,6 +42,9 @@ const config = defineConfig({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn
 		"plugin:unicorn/recommended",
 
+		// https://github.com/SonarSource/eslint-plugin-sonarjs
+		"plugin:sonarjs/recommended",
+
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
 	],
