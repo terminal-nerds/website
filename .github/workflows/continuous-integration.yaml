@@ -154,4 +154,4 @@ jobs:
                   run_install: true
 
             - name: Execute ESLint
-              run: pnpm lint:js
+              run: pnpm eslint . --ext .js,.cjs,.mjs,.ts
