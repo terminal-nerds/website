@@ -10,6 +10,7 @@ const config = defineConfig({
 	extends: ["../.eslintrc.cjs"],
 
 	env: {
+		browser: true,
 		es2021: true,
 		node: true,
 	},

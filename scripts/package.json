@@ -12,6 +12,7 @@
 	},
 	"type": "module",
 	"scripts": {
-		"build": "tsc --build"
+		"build": "tsc --build",
+		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts"
 	}
 }
