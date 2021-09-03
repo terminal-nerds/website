@@ -22,8 +22,7 @@ const config = defineConfig({
 		".git/**/*",
 		".husky/**/*",
 		"build/**/*",
-		// Unignore files starting with dot (usually config files)
-		"!.*",
+		"!.*", // Unignore files starting with dot (usually config files)
 	],
 
 	extends: [
@@ -51,6 +50,7 @@ const config = defineConfig({
 	],
 
 	rules: {
+		// ---- ESLint built-in rules
 		"max-len": [
 			"error",
 			{
@@ -61,17 +61,14 @@ const config = defineConfig({
 				ignoreUrls: true,
 			},
 		],
-
 		"no-console": isProduction ? ["error"] : ["warn"],
-
 		"no-alert": ["error"],
-
 		"no-debugger": ["error"],
-
 		"prefer-named-capture-group": ["error"],
-
 		"func-names": ["error", "as-needed"],
 
+		// ---- Plugins rules
+		"unicorn/filename-case": ["off"], // We have ls-lint instead
 		"xss/no-mixed-html": ["error"],
 		"xss/no-location-href-assign": ["error"],
 	},
