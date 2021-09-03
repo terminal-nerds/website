@@ -9,5 +9,15 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.markdownlint": true
 	},
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"eslint.packageManager": "pnpm",
+	"eslint.validate": [
+		"javascript",
+		"typescript",
+		"json",
+		"jsonc",
+		"json5",
+		"yaml",
+		"yml"
+	]
 }

@@ -4,6 +4,7 @@
 		"esbenp.prettier-vscode",
 		"joshbolduc.commitlint",
 		"vivaxy.vscode-conventional-commits",
-		"DavidAnson.vscode-markdownlint"
+		"davidanson.vscode-markdownlint",
+		"dbaeumer.vscode-eslint"
 	]
 }
