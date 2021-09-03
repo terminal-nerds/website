@@ -46,6 +46,10 @@ const config = defineConfig({
 		// https://github.com/mysticatea/eslint-plugin-eslint-comments
 		"plugin:eslint-comments/recommended",
 
+		// https://github.com/import-js/eslint-plugin-import
+		"plugin:import/recommended",
+		"plugin:import/typescript",
+
 		// https://github.com/ota-meshi/eslint-plugin-jsonc
 		"plugin:jsonc/recommended-with-jsonc",
 
@@ -98,12 +102,34 @@ const config = defineConfig({
 		"func-names": ["error", "as-needed"],
 
 		// ---- Plugins rules
+		"import/no-unresolved": ["off"], // Not supported in ESM
+		// MORE: https://github.com/import-js/eslint-plugin-import/issues/1868
+
 		"no-secrets/no-secrets": ["error", { tolerance: 4.2 }],
 
 		"unicorn/filename-case": ["off"], // We have ls-lint instead
 
 		"xss/no-mixed-html": ["error"],
 		"xss/no-location-href-assign": ["error"],
+	},
+
+	settings: {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts"],
+		},
+		"import/internal-regex": "^@terminal-nerd/",
+		"import/resolver": {
+			typescript: {
+				alwaysTryTypes: true,
+				project: [
+					"./tsconfig.json",
+					"./client/tsconfig.json",
+					"./common/tsconfig.json",
+					"./scripts/tsconfig.json",
+					"./server/tsconfig.json",
+				],
+			},
+		},
 	},
 });
 
