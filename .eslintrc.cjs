@@ -1,13 +1,9 @@
 // @ts-check
-
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 const defineConfig = require("eslint-define-config").defineConfig;
 
 const isProduction = process.env.NODE_ENV === "production";
 
 // https://eslint.org/docs/user-guide/configuring/
-
 const config = defineConfig({
 	parser: "@typescript-eslint/parser",
 
