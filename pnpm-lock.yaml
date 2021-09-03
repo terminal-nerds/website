@@ -12,6 +12,7 @@ importers:
       eslint: ^7.32.0
       eslint-config-prettier: ^8.3.0
       eslint-define-config: ^1.0.9
+      eslint-plugin-eslint-comments: ^3.2.0
       eslint-plugin-jsonc: ^1.6.0
       eslint-plugin-prettier: ^4.0.0
       eslint-plugin-promise: ^5.1.0
@@ -35,6 +36,7 @@ importers:
       eslint: 7.32.0
       eslint-config-prettier: 8.3.0_eslint@7.32.0
       eslint-define-config: 1.0.9
+      eslint-plugin-eslint-comments: 3.2.0_eslint@7.32.0
       eslint-plugin-jsonc: 1.6.0_eslint@7.32.0
       eslint-plugin-prettier: 4.0.0_5a48a349ffec60f5257b5f148f5199c3
       eslint-plugin-promise: 5.1.0_eslint@7.32.0
@@ -1219,6 +1221,17 @@ packages:
 
   /eslint-define-config/1.0.9:
     resolution: {integrity: sha512-LRzNlRo9sv43BAXY+nhZIUCZLRisTMEXXSqlGc2uZ8emAGyJv3FDSew2MIVRMwThexEjVxjNmeqduaexJ/GT3Q==}
+    dev: true
+
+  /eslint-plugin-eslint-comments/3.2.0_eslint@7.32.0:
+    resolution: {integrity: sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==}
+    engines: {node: '>=6.5.0'}
+    peerDependencies:
+      eslint: '>=4.19.1'
+    dependencies:
+      escape-string-regexp: 1.0.5
+      eslint: 7.32.0
+      ignore: 5.1.8
     dev: true
 
   /eslint-plugin-jsonc/1.6.0_eslint@7.32.0:

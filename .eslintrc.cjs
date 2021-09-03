@@ -1,7 +1,6 @@
 // @ts-check
 
-/* eslint-disable-next-line @typescript-eslint/no-var-requires */
-const defineConfig = require("eslint-define-config").defineConfig;
+const defineConfig = require("eslint-define-config").defineConfig; // eslint-disable-line @typescript-eslint/no-var-requires
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -43,6 +42,9 @@ const config = defineConfig({
 
 		// https://github.com/typescript-eslint/typescript-eslint
 		"plugin:@typescript-eslint/recommended",
+
+		// https://github.com/mysticatea/eslint-plugin-eslint-comments
+		"plugin:eslint-comments/recommended",
 
 		// https://github.com/ota-meshi/eslint-plugin-jsonc
 		"plugin:jsonc/recommended-with-jsonc",
@@ -91,6 +93,7 @@ const config = defineConfig({
 
 		// ---- Plugins rules
 		"unicorn/filename-case": ["off"], // We have ls-lint instead
+
 		"xss/no-mixed-html": ["error"],
 		"xss/no-location-href-assign": ["error"],
 	},
