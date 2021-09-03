@@ -69,6 +69,9 @@ const config = defineConfig({
 	],
 
 	plugins: [
+		// https://github.com/nickdeis/eslint-plugin-no-secrets
+		"no-secrets",
+
 		// https://github.com/Rantanen/eslint-plugin-xss
 		"xss",
 	],
@@ -92,6 +95,8 @@ const config = defineConfig({
 		"func-names": ["error", "as-needed"],
 
 		// ---- Plugins rules
+		"no-secrets/no-secrets": ["error", { tolerance: 4.2 }],
+
 		"unicorn/filename-case": ["off"], // We have ls-lint instead
 
 		"xss/no-mixed-html": ["error"],
