@@ -11,5 +11,8 @@
 		"outDir": "build/"
 	},
 	"include": ["source/"],
-	"exclude": ["node_modules/"]
+	"exclude": [
+		"build/",
+		"node_modules/"
+	]
 }
