@@ -21,6 +21,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-define-config": "^1.0.9",
 		"eslint-import-resolver-typescript": "^2.4.0",
+		"eslint-plugin-compat": "^3.13.0",
 		"eslint-plugin-diff": "^1.0.12",
 		"eslint-plugin-eslint-comments": "^3.2.0",
 		"eslint-plugin-import": "^2.24.2",
@@ -53,8 +54,10 @@
 		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
+		"lint:format": "prettier --check .",
 		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
+		"lint:types": "tsc --noEmit",
 		"start": "pnpm run start --filter ./"
 	}
 }

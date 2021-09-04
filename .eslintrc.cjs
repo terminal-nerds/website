@@ -50,6 +50,9 @@ const config = defineConfig({
 		// https://github.com/typescript-eslint/typescript-eslint
 		"plugin:@typescript-eslint/recommended",
 
+		// https://github.com/amilajack/eslint-plugin-compat
+		"plugin:compat/recommended",
+
 		// https://github.com/paleite/eslint-plugin-diff
 		isContinuousIntegration && "plugin:diff/diff",
 
