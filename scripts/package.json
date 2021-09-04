@@ -13,6 +13,8 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc --build",
+		"format": "prettier --write .",
+		"lint:format": "prettier --check .",
 		"lint:types": "tsc --noEmit"
 	}
 }
