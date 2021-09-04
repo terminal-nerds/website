@@ -30,6 +30,7 @@
 		"eslint-plugin-json-schema-validator": "^1.2.20",
 		"eslint-plugin-jsonc": "^1.6.0",
 		"eslint-plugin-no-secrets": "^0.8.9",
+		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-promise": "^5.1.0",
 		"eslint-plugin-regexp": "^1.1.0",

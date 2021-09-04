@@ -77,6 +77,9 @@ const config = defineConfig({
 		// https://github.com/ota-meshi/eslint-plugin-json-schema-validator
 		"plugin:json-schema-validator/recommended",
 
+		// https://github.com/mysticatea/eslint-plugin-node
+		"plugin:node/recommended",
+
 		// https://github.com/ota-meshi/eslint-plugin-regexp
 		"plugin:regexp/recommended",
 
@@ -131,6 +134,10 @@ const config = defineConfig({
 		// ---- Plugins rules
 		"import/no-unresolved": ["off"], // Not supported in ESM
 		// MORE: https://github.com/import-js/eslint-plugin-import/issues/1868
+
+		"node/no-unpublished-import": ["off"],
+		"node/no-missing-import": ["off"], // Doesn't support ESM yet
+		// MORE: https://github.com/mysticatea/eslint-plugin-node/issues/255
 
 		"no-secrets/no-secrets": ["error", { tolerance: 4.2 }],
 
