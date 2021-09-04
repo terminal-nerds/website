@@ -32,6 +32,8 @@
 	],
 	"scripts": {
 		"build": "tsc --build",
+		"clean:build": "rimraf ./build",
+		"clean:node": "rimraf ./node_modules",
 		"format": "prettier --write .",
 		"lint:format": "prettier --check .",
 		"lint:types": "tsc --noEmit"

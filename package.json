@@ -19,11 +19,14 @@
 		"markdownlint": "^0.24.0",
 		"markdownlint-cli": "^0.28.1",
 		"prettier": "^2.3.2",
+		"rimraf": "^3.0.2",
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.2"
 	},
 	"scripts": {
 		"build": "pnpm run build --filter ./",
+		"clean:build": "pnpm run clean:build --filter ./",
+		"clean:node": "pnpm run clean:node --filter ./ && rimraf ./node_modules",
 		"commit": "gacp",
 		"format": "prettier --write .",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",

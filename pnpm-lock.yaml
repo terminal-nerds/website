@@ -11,6 +11,7 @@ importers:
       markdownlint: ^0.24.0
       markdownlint-cli: ^0.28.1
       prettier: ^2.3.2
+      rimraf: ^3.0.2
       tslib: ^2.3.1
       typescript: ^4.4.2
     devDependencies:
@@ -21,6 +22,7 @@ importers:
       markdownlint: 0.24.0
       markdownlint-cli: 0.28.1
       prettier: 2.3.2
+      rimraf: 3.0.2
       tslib: 2.3.1
       typescript: 4.4.2
 
@@ -1582,6 +1584,13 @@ packages:
   /right-pad/1.0.1:
     resolution: {integrity: sha1-jKCMLLtbVedNr6lr9/0aJ9VoyNA=}
     engines: {node: '>= 0.10'}
+    dev: true
+
+  /rimraf/3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
+    dependencies:
+      glob: 7.1.7
     dev: true
 
   /run-con/1.2.10:

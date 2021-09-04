@@ -11,14 +11,16 @@
 		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
 	},
 	"type": "module",
+	"devDependencies": {
+		"@terminal-nerd/common": "workspace:*"
+	},
 	"scripts": {
 		"build": "tsc --build",
+		"clean:build": "rimraf ./build",
+		"clean:node": "rimraf ./node_modules",
 		"format": "prettier --write .",
 		"lint:format": "prettier --check .",
 		"lint:types": "tsc --noEmit",
 		"start": "node ./build/example.js"
-	},
-	"devDependencies": {
-		"@terminal-nerd/common": "workspace:*"
 	}
 }
