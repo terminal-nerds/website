@@ -32,6 +32,6 @@
 	],
 	"scripts": {
 		"build": "tsc --build",
-		"lint:js": "eslint . --ext .ts,.json,.yaml,.yml,.vue"
+		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe"
 	}
 }

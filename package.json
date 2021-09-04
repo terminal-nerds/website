@@ -52,7 +52,7 @@
 		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
-		"lint:js": "eslint . --ext .ts,.yaml,.yml,.json,.vue",
+		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
 		"start": "pnpm run start --filter ./"
 	}
