@@ -16,9 +16,9 @@
 		"clean:all": "run-s clean:build clean:node",
 		"clean:build": "rimraf ./build",
 		"clean:node": "rimraf ./node_modules",
-		"format": "prettier --write .",
+		"format": "pretty-quick --verbose --write",
 		"lint": "run-s lint:* --continue-on-error",
-		"lint:format": "prettier --check .",
+		"lint:format": "pretty-quick --branch develop --check --verbose",
 		"lint:types": "tsc --noEmit"
 	}
 }
