@@ -13,11 +13,11 @@
 	"eslint.packageManager": "pnpm",
 	"eslint.validate": [
 		"javascript",
-		"typescript",
 		"json",
 		"jsonc",
-		"json5",
+		"typescript",
 		"yaml",
-		"yml"
+		"yml",
+		"vue"
 	]
 }

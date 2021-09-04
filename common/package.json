@@ -28,10 +28,10 @@
 		}
 	},
 	"files": [
-		"build/**/*"
+		"./build/**/*"
 	],
 	"scripts": {
 		"build": "tsc --build",
-		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe"
+		"lint:js": "eslint . --ignore-path ../.eslintignore --ext .json,.ts,.yaml,.yml,.vue --format codeframe"
 	}
 }

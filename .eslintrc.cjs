@@ -36,14 +36,6 @@ const config = defineConfig({
 		},
 	],
 
-	ignorePatterns: [
-		"node_modules/**/*",
-		".git/**/*",
-		".husky/**/*",
-		"build/**/*",
-		"!.*", // Unignore files starting with dot (usually config files)
-	],
-
 	extends: [
 		"eslint:recommended",
 
