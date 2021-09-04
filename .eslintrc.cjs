@@ -54,11 +54,16 @@ const config = defineConfig({
 		"plugin:import/recommended",
 		"plugin:import/typescript",
 
-		// https://github.com/jest-community/eslint-plugin-jest
 		// TODO: ACTIVATE IT ONCE WE SETUP JEST
+		// https://github.com/jest-community/eslint-plugin-jest
 		// "plugin:jest/recommended",
 		// "plugin:jest/style",
+		// https://github.com/dangreenisrael/eslint-plugin-jest-formatting
 		// "plugin:jest-formatting/recommended",
+		// https://github.com/testing-library/eslint-plugin-jest-dom
+		// "plugin:jest-dom/recommended",
+		// https://github.com/testing-library/eslint-plugin-testing-library
+		// "plugin:testing-library"
 
 		// https://github.com/ota-meshi/eslint-plugin-jsonc
 		"plugin:jsonc/recommended-with-jsonc",
