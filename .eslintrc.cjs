@@ -1,16 +1,23 @@
 // @ts-check
-
 const defineConfig = require("eslint-define-config").defineConfig; // eslint-disable-line @typescript-eslint/no-var-requires
 
 const isProduction = process.env.NODE_ENV === "production";
 
 // https://eslint.org/docs/user-guide/configuring/
 const config = defineConfig({
-	parser: "@typescript-eslint/parser",
-
 	parserOptions: {
+		parser: "@typescript-eslint/parser",
 		ecmaVersion: 2021,
+		extraFileExtensions: [".vue"],
+		project: [
+			"./tsconfig.json",
+			"./client/tsconfig.json",
+			"./common/tsconfig.json",
+			"./scripts/tsconfig.json",
+			"./server/tsconfig.json",
+		],
 		sourceType: "module",
+		tsconfigRootDir: __dirname,
 	},
 
 	overrides: [
@@ -74,6 +81,9 @@ const config = defineConfig({
 		// https://github.com/SonarSource/eslint-plugin-sonarjs
 		"plugin:yml/recommended",
 
+		// https://github.com/vuejs/eslint-plugin-vue
+		"plugin:vue/vue3-strongly-recommended",
+
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
 	],
@@ -117,22 +127,7 @@ const config = defineConfig({
 	},
 
 	settings: {
-		"import/parsers": {
-			"@typescript-eslint/parser": [".ts"],
-		},
 		"import/internal-regex": "^@terminal-nerd/",
-		"import/resolver": {
-			typescript: {
-				alwaysTryTypes: true,
-				project: [
-					"./tsconfig.json",
-					"./client/tsconfig.json",
-					"./common/tsconfig.json",
-					"./scripts/tsconfig.json",
-					"./server/tsconfig.json",
-				],
-			},
-		},
 	},
 });
 
