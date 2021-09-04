@@ -5,6 +5,8 @@ const isProduction = process.env.NODE_ENV === "production";
 
 // https://eslint.org/docs/user-guide/configuring/
 const config = defineConfig({
+	root: true,
+
 	parserOptions: {
 		parser: "@typescript-eslint/parser",
 		ecmaVersion: 2021,
@@ -30,11 +32,6 @@ const config = defineConfig({
 			parser: "yaml-eslint-parser",
 		},
 	],
-
-	env: {
-		es2021: true,
-		node: true,
-	},
 
 	ignorePatterns: [
 		"node_modules/**/*",

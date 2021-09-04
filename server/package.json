@@ -13,7 +13,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc --build",
-		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts",
+		"lint:js": "eslint . --ext .ts,.json,.yaml,.yml,.vue",
 		"start": "node ./build/example.js"
 	},
 	"devDependencies": {

@@ -1,6 +1,7 @@
 # ============== Folders ==============
 
 # Node.js packages (dependencies), which can be installed
+build/
 node_modules/
 
 # =============== Files ===============

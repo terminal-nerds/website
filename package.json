@@ -47,7 +47,7 @@
 		"commit": "gacp",
 		"format": "prettier --write \".\"",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
-		"lint:js": "eslint . --ext .js,.cjs,.mjs,.ts,.yaml,.yml,.json",
+		"lint:js": "eslint . --ext .ts,.yaml,.yml,.json,.vue",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
 		"start": "pnpm run start --filter ./"
 	}
