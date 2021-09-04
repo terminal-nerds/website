@@ -13,9 +13,11 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc --build",
+		"clean:all": "run-s clean:build clean:node",
 		"clean:build": "rimraf ./build",
 		"clean:node": "rimraf ./node_modules",
 		"format": "prettier --write .",
+		"lint": "run-s lint:* --continue-on-error",
 		"lint:format": "prettier --check .",
 		"lint:types": "tsc --noEmit"
 	}
