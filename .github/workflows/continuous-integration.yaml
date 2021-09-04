@@ -5,6 +5,7 @@ on:
         branches: [main, develop]
 
 env:
+    NODE_ENV: continuous-integration
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
@@ -158,4 +159,4 @@ jobs:
                   run_install: true
 
             - name: Execute ESLint
-              run: pnpm eslint . --ext .js,.cjs,.mjs,.ts
+              run: pnpm eslint . --ext .ts,.yaml,.yml,.json,.vue

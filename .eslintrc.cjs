@@ -1,7 +1,10 @@
 // @ts-check
 const defineConfig = require("eslint-define-config").defineConfig; // eslint-disable-line @typescript-eslint/no-var-requires
 
-const isProduction = process.env.NODE_ENV === "production";
+// Add conditionals for checking specified environments
+const { NODE_ENV } = process.env;
+const isProduction = NODE_ENV === "production";
+const isContinuousIntegration = NODE_ENV === "continuous-integration";
 
 // https://eslint.org/docs/user-guide/configuring/
 const config = defineConfig({
@@ -46,6 +49,9 @@ const config = defineConfig({
 
 		// https://github.com/typescript-eslint/typescript-eslint
 		"plugin:@typescript-eslint/recommended",
+
+		// https://github.com/paleite/eslint-plugin-diff
+		isContinuousIntegration && "plugin:diff/diff",
 
 		// https://github.com/mysticatea/eslint-plugin-eslint-comments
 		"plugin:eslint-comments/recommended",
@@ -94,7 +100,7 @@ const config = defineConfig({
 
 		// https://github.com/prettier/eslint-config-prettier
 		"prettier",
-	],
+	].filter(Boolean),
 
 	plugins: [
 		// https://github.com/nickdeis/eslint-plugin-no-secrets
