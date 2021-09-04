@@ -46,9 +46,9 @@ jobs:
             - name: Execute commitlint
               run: >
                   pnpm commitlint
-                    --verbose
-                    --from HEAD~${{ github.event.pull_request.commits }}
-                    --to HEAD
+                  --verbose
+                  --from HEAD~${{ github.event.pull_request.commits }}
+                  --to HEAD
 
     prettier:
         name: Prettier - check code formatting style
@@ -161,5 +161,5 @@ jobs:
             - name: Execute ESLint
               run: >
                   pnpm eslint .
-                      --ext .json,.ts,.yaml,.yml,.vue
-                      --format codeframe
+                  --ext .json,.ts,.yaml,.yml,.vue
+                  --format codeframe
