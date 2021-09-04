@@ -13,6 +13,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc --build",
+		"lint:types": "tsc --noEmit",
 		"start": "node ./build/example.js"
 	},
 	"devDependencies": {
