@@ -18,7 +18,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
@@ -55,7 +55,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
@@ -92,7 +92,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
