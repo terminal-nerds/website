@@ -53,6 +53,9 @@ const config = defineConfig({
 		// https://github.com/ota-meshi/eslint-plugin-jsonc
 		"plugin:jsonc/recommended-with-jsonc",
 
+		// https://github.com/ota-meshi/eslint-plugin-json-schema-validator
+		"plugin:json-schema-validator/recommended",
+
 		// https://github.com/ota-meshi/eslint-plugin-regexp
 		"plugin:regexp/recommended",
 
