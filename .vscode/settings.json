@@ -1,0 +1,23 @@
+{
+	"conventionalCommits.emojiFormat": "emoji",
+	"conventionalCommits.gitmoji": true,
+	"conventionalCommits.showEditor": true,
+	"conventionalCommits.scopes": ["VSCode"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"prettier.useEditorConfig": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.markdownlint": true
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"eslint.packageManager": "pnpm",
+	"eslint.validate": [
+		"javascript",
+		"json",
+		"jsonc",
+		"typescript",
+		"yaml",
+		"yml",
+		"vue"
+	]
+}

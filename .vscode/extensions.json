@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"esbenp.prettier-vscode",
+		"joshbolduc.commitlint",
+		"vivaxy.vscode-conventional-commits",
+		"davidanson.vscode-markdownlint",
+		"dbaeumer.vscode-eslint"
+	]
+}
