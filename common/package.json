@@ -28,7 +28,7 @@
 		}
 	},
 	"files": [
-		"build/**/*"
+		"./build/**/*"
 	],
 	"scripts": {
 		"build": "tsc --build",
@@ -38,6 +38,7 @@
 		"format": "pretty-quick --verbose --write",
 		"lint": "run-s lint:* --continue-on-error",
 		"lint:format": "pretty-quick --branch develop --check --verbose",
+		"lint:js": "eslint . --ignore-path ../.eslintignore --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:types": "tsc --noEmit"
 	}
 }
