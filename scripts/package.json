@@ -20,6 +20,7 @@
 		"lint": "run-s lint:* --continue-on-error",
 		"lint:format": "pretty-quick --branch develop --check --verbose",
 		"lint:js": "eslint . --ignore-path ../.eslintignore --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
-		"lint:types": "tsc --noEmit"
+		"lint:types": "tsc --noEmit",
+		"watch": "tsc --build --watch"
 	}
 }

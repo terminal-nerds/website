@@ -24,6 +24,7 @@
 		"lint:format": "pretty-quick --branch develop --check --verbose",
 		"lint:js": "eslint . --ignore-path ../.eslintignore --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:types": "tsc --noEmit",
-		"start": "node ./build/example.js"
+		"start": "node ./build/example.js",
+		"watch": "tsc --build --watch"
 	}
 }

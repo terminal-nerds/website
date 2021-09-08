@@ -65,6 +65,7 @@
 		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
 		"lint:types": "pnpm run lint:types --filter ./",
-		"start": "pnpm run start --filter ./"
+		"start": "pnpm run start --filter ./",
+		"watch": "pnpm run watch --filter ./"
 	}
 }
