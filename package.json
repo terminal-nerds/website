@@ -58,6 +58,7 @@
 		"lint:format": "prettier --check .",
 		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
+		"lint-staged": "lint-staged --verbose",
 		"start": "pnpm run start --filter ./"
 	}
 }
