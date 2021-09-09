@@ -20,6 +20,8 @@ const config = {
 	rangeEnd: Number.POSITIVE_INFINITY,
 
 	endOfLine: "lf",
+
+	vueIndentScriptAndStyle: true,
 };
 
 module.exports = config;

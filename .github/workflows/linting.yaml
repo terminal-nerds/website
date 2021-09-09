@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Linting
 
 on:
     pull_request:
@@ -19,7 +19,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
@@ -46,9 +46,9 @@ jobs:
             - name: Execute commitlint
               run: >
                   pnpm commitlint
-                  --verbose
                   --from HEAD~${{ github.event.pull_request.commits }}
                   --to HEAD
+                  --verbose
 
     prettier:
         name: Prettier - check code formatting style
@@ -60,7 +60,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
@@ -85,7 +85,11 @@ jobs:
                   run_install: true
 
             - name: Execute Prettier script
-              run: pnpm prettier --check .
+              run: >
+                  pnpm pretty-quick
+                  --branch HEAD~${{ github.event.pull_request.commits }}
+                  --check
+                  --verbose
 
     markdownlint:
         name: markdownlint - validate markdown files
@@ -97,7 +101,7 @@ jobs:
                 pnpm-version: [6.x]
                 os: [ubuntu-latest]
         steps:
-            - name: Checkout to ${{ github.repository }} repository
+            - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
                   ref: ${{ github.head_ref }}
