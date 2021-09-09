@@ -47,19 +47,28 @@
 		"lint-staged": "^11.1.2",
 		"markdownlint": "^0.24.0",
 		"markdownlint-cli": "^0.28.1",
+		"npm-run-all": "^4.1.5",
 		"prettier": "^2.3.2",
+		"pretty-quick": "^3.1.1",
+		"rimraf": "^3.0.2",
 		"tslib": "^2.3.1",
 		"typescript": "^4.4.2"
 	},
 	"scripts": {
 		"build": "pnpm run build --filter ./",
+		"clean:all": "run-s clean:build clean:node",
+		"clean:build": "pnpm run clean:build --filter ./",
+		"clean:node": "pnpm run clean:node --filter ./ && rimraf ./node_modules",
 		"commit": "gacp",
-		"format": "prettier --write \".\"",
+		"format": "pretty-quick --verbose --write",
+		"lint": "run-s lint:* --continue-on-error",
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
-		"lint:format": "prettier --check .",
+		"lint:format": "pretty-quick --branch develop --check --verbose",
 		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
 		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
+		"lint:types": "pnpm run lint:types --filter ./",
+		"start": "pnpm run start --filter ./",
 		"lint-staged": "lint-staged --verbose",
-		"start": "pnpm run start --filter ./"
+		"watch": "pnpm run watch --filter ./"
 	}
 }
