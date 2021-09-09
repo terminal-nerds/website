@@ -1,4 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm lint-staged --verbose
+echo "-----"
+echo "🐺 [Husky]: Executing the pre-commit Git hook..."
+
+pnpm exec lint-staged --verbose
+
+echo ""
+echo "🐺 [Husky]: Finished pre-commit hook with success!"
+echo ""

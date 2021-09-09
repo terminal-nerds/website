@@ -1,4 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm commitlint --edit 
+echo "-----"
+echo "🐺 [Husky]: Executing the commit-msg Git hook..."
+
+pnpm exec commitlint --verbose --edit "$1"
+
+echo ""
+echo "🐺 [Husky]: Finished commit-msg hook with success!"
+echo ""
