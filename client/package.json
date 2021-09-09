@@ -17,6 +17,7 @@
 		"start": "node ./build/example.js"
 	},
 	"devDependencies": {
-		"@terminal-nerd/common": "workspace:*"
+		"@terminal-nerd/common": "workspace:*",
+		"browserslist": "^4.17.0"
 	}
 }
