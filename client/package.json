@@ -1,0 +1,22 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"name": "@terminal-nerd/client",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd/blob/main/client",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "tsc --build",
+		"lint:js": "eslint . --ignore-path ../.eslintignore --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
+		"start": "node ./build/example.js"
+	},
+	"devDependencies": {
+		"@terminal-nerd/common": "workspace:*"
+	}
+}

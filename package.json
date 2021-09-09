@@ -1,5 +1,65 @@
 {
+	"$schema": "https://json.schemastore.org/package",
+	"private": true,
+	"name": "terminal-nerd",
+	"homepage": "https://github.com/terminal-nerds/terminal-nerd",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/terminal-nerds/terminal-nerd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/terminal-nerds/terminal-nerd/issues"
+	},
+	"type": "module",
 	"devDependencies": {
-		"husky": "^7.0.1"
+		"@commitlint/config-conventional": "^13.1.0",
+		"@types/node": "^16.7.10",
+		"@typescript-eslint/eslint-plugin": "^4.30.0",
+		"@typescript-eslint/parser": "^4.30.0",
+		"commitlint": "^13.1.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-define-config": "^1.0.9",
+		"eslint-import-resolver-typescript": "^2.4.0",
+		"eslint-plugin-compat": "^3.13.0",
+		"eslint-plugin-diff": "^1.0.12",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-import": "^2.24.2",
+		"eslint-plugin-jest": "^24.4.0",
+		"eslint-plugin-jest-dom": "^3.9.0",
+		"eslint-plugin-jest-formatting": "^3.0.0",
+		"eslint-plugin-json-schema-validator": "^1.2.20",
+		"eslint-plugin-jsonc": "^1.6.0",
+		"eslint-plugin-no-secrets": "^0.8.9",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-regexp": "^1.1.0",
+		"eslint-plugin-security": "^1.4.0",
+		"eslint-plugin-sonarjs": "^0.10.0",
+		"eslint-plugin-testing-library": "^4.12.0",
+		"eslint-plugin-unicorn": "^35.0.0",
+		"eslint-plugin-vue": "^7.17.0",
+		"eslint-plugin-xss": "^0.1.10",
+		"eslint-plugin-yml": "^0.10.0",
+		"gacp": "^2.10.2",
+		"husky": "^7.0.1",
+		"lint-staged": "^11.1.2",
+		"markdownlint": "^0.24.0",
+		"markdownlint-cli": "^0.28.1",
+		"prettier": "^2.3.2",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.2"
+	},
+	"scripts": {
+		"build": "pnpm run build --filter ./",
+		"commit": "gacp",
+		"format": "prettier --write \".\"",
+		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
+		"lint:format": "prettier --check .",
+		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
+		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
+		"lint-staged": "lint-staged --verbose",
+		"start": "pnpm run start --filter ./"
 	}
 }
