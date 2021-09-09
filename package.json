@@ -69,6 +69,7 @@
 		"lint:types": "pnpm run lint:types --filter ./",
 		"start": "pnpm run start --filter ./",
 		"lint-staged": "lint-staged --verbose",
+		"prepare": "husky install",
 		"watch": "pnpm run watch --filter ./"
 	}
 }
