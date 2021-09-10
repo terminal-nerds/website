@@ -124,7 +124,7 @@ then?**\
 
 > 🎺 Look at our [annoucement in the discussions], to read more!
 
-[contributing to the project]: ./CONTRIBUTING.md
+[contributing to the project]: ./.github/CONTRIBUTING.md
 [annoucement in the discussions]: https://github.com/terminal-nerds/terminal-nerd/discussions/25
 
 ---
@@ -147,7 +147,7 @@ trust your gut but you're not sure, then this is good enough for us. Please take
 a look at the instructions in the [SECURITY.md](./SECURITY.md) file regarding
 next steps.
 
-[security policy]: ./SECURITY.md
+[security policy]: ./.github/SECURITY.md
 
 ---
 
