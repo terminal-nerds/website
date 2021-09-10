@@ -14,13 +14,13 @@
 </template>
 
 <script lang="ts">
-export interface Human {
-	name: string;
-}
+	export interface Human {
+		name: string;
+	}
 
-const me: Human = {
-	name: "xeho91",
-};
+	const me: Human = {
+		name: "xeho91",
+	};
 
-console.log(me);
+	console.log(me);
 </script>
