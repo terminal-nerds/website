@@ -5,17 +5,12 @@ If your Pull Request is still a WIP (Work In Progress),
 would you please mark it as a Draft?
 -->
 
-# New `feature` for the client-side
-
-<!--
-Pick one of the starting sentences and finish it,
-or provide your own. 🙂
--->
+# A `fix` for the client-side
 
 ✨ The purpose of this Pull Request is to initiate the work and discussion on
+**fixing the issue.**
 
-<!-- implementing a new feature **...**. -->
-<!-- implementing new features **...**. -->
+The issue is described in: #...
 
 ---
 
@@ -29,7 +24,7 @@ or provide your own. 🙂
 
 <!-- NOTE:
 Is okay if you did skip the linting.
-If you got stuck at troubleshooting on your own, let us know and push the work
+if you got stuck at troubleshooting on your own, let us know and push the work
 you've made.
 We'll do our best to help! 🙂
 -->
@@ -40,17 +35,17 @@ We'll do our best to help! 🙂
 
 <!-- Please uncomment the correct answer, or provide your own. 😃 -->
 
-1. **Is this Pull Request referring to any Discussion?**
-    <!-- Yes, discussion: #<id> -->
-    <!-- No. -->
-
-1. **Does this feature needs tests to be written?**
+1. **Is there a point to write the tests?**
     <!-- Yes. -->
     <!-- No. -->
 
-1. **Does this feature needs documenting?**
-    <!-- Yes, on the [Wiki]. -->
-    <!-- No. -->
+1. **This fix solves the issue...?**
+    <!-- Completely. -->
+    <!-- Partially. -->
+
+1. **How serious this issue is?**
+    <!-- Very serious and needs a hotfix ASAP. -->
+    <!-- It's mild, can be added to the next version. -->
 
 ---
 
@@ -59,7 +54,7 @@ We'll do our best to help! 🙂
 <!--
 Would you please describe the tasks shortly
 for the sake of communication with collaborators
-and speed up the time on developing this feature?
+and speed up the time on resolving this issue?
 -->
 
 -   [ ] ...
@@ -75,7 +70,7 @@ Would you mind providing any resources as additional source knowledge
 and for easier navigation?
 Such as:
 - link to the official documentation or the specific section in it
-- blog post or something similar to provide additional
+- blog posts or something similar
 - ... other
 -->
 
