@@ -1,5 +1,8 @@
 # ============== Folders ==============
 
+# Unignore the GitHub' directory
+!.github/
+
 # Built outputs
 build/
 
