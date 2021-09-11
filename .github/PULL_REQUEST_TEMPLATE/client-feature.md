@@ -81,6 +81,6 @@ Such as:
 -   [link label](url link)
 -   [link label](url link)
 
-[code of conduct]: ../../CODE_OF_CONDUCT.md
-[contributing guideliness]: ../../CONTRIBUTING.md
+[code of conduct]: ../CODE_OF_CONDUCT.md
+[contributing guideliness]: ../CONTRIBUTING.md
 [wiki]: https://github.com/terminal-nerds/terminal-nerd/wiki
