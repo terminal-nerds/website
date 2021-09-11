@@ -65,7 +65,7 @@
 		"lint:commit": "commitlint --verbose --from \"develop\" --to \"HEAD\"",
 		"lint:format": "pretty-quick --branch develop --check --verbose",
 		"lint:js": "eslint . --ext .json,.ts,.yaml,.yml,.vue --format codeframe",
-		"lint:md": "markdownlint \"**/*.md\" --ignore \"node_modules/\"",
+		"lint:md": "markdownlint . --dot --ignore-path .gitignore",
 		"lint:types": "pnpm run lint:types --filter ./",
 		"start": "pnpm run start --filter ./",
 		"lint-staged": "lint-staged --verbose",
