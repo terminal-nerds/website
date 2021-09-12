@@ -208,5 +208,5 @@ jobs:
             - name: Execute Stylelint
               run: >
                   pnpm stylelint "./client/source/**/*.{css,scss,vue}"
-                  --format verbose
+                  --formatter verbose
                   --allow-empty-input
