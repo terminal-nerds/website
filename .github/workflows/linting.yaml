@@ -157,6 +157,13 @@ jobs:
                   key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
                   restore-keys: ${{ runner.os }}-
 
+            - name: Cache last ESLint run
+              uses: actions/cache@v2
+              with:
+                  path: ${{ env.NODE_CACHE_FOLDER }}
+                  key: ${{ runner.os }}-${{ hashFiles('**/.eslintcache') }}
+                  restore-keys: ${{ runner.os }}-
+
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
               with:
@@ -166,5 +173,7 @@ jobs:
             - name: Execute ESLint
               run: >
                   pnpm eslint .
+                  --cache
+                  --cache-location node_modules/.cache/.eslintcache
                   --ext .json,.ts,.yaml,.yml,.vue
                   --format codeframe
