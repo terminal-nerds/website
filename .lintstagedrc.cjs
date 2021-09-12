@@ -3,6 +3,8 @@
 const config = {
 	"*": ["pretty-quick --check --staged"],
 
+	"*.{css,scss,vue}": ["stylelint"],
+
 	"*.{json,yml,yaml}": ["eslint"],
 
 	"*.md": ["markdownlint"],
