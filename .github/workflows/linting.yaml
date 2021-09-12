@@ -1,5 +1,4 @@
 name: Linting
-description: Using the setup linters in the project
 
 on:
     pull_request:
