@@ -17,9 +17,7 @@ The issue is described in: #...
 ## Checklist ☑️
 
 -   [ ] **I have read the [Code of Conduct]** _(or I am already familiar with it)_
-
 -   [ ] I followed the [Contributing Guideliness].
-
 -   [ ] I haven't skipped the linting with lint-staged.
 
 <!-- NOTE:
@@ -77,6 +75,6 @@ Such as:
 -   [link label](url link)
 -   [link label](url link)
 
-[code of conduct]: ../CODE_OF_CONDUCT.md
-[contributing guideliness]: ../CONTRIBUTING.md
+[code of conduct]: https://github.com/terminal-nerds/terminal-nerd/blob/main/.github/CODE_OF_CONDUCT.md
+[contributing guideliness]: https://github.com/terminal-nerds/terminal-nerd/blob/main/.github/CONTRIBUTING.md
 [wiki]: https://github.com/terminal-nerds/terminal-nerd/wiki

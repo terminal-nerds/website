@@ -14,17 +14,15 @@ or provide your own. 🙂
 
 ✨ The purpose of this Pull Request is to initiate the work and discussion on
 
-<!-- implementing a new feature **...**. -->
-<!-- implementing new features **...**. -->
+<!-- **implementing a new feature ...**. -->
+<!-- **implementing new features ...**. -->
 
 ---
 
 ## Checklist ☑️
 
 -   [ ] **I have read the [Code of Conduct]** _(or I am already familiar with it)_
-
 -   [ ] I followed the [Contributing Guideliness].
-
 -   [ ] I haven't skipped the linting with lint-staged.
 
 <!-- NOTE:
@@ -40,7 +38,7 @@ We'll do our best to help! 🙂
 
 <!-- Please uncomment the correct answer, or provide your own. 😃 -->
 
-1. **Is this Pull Request referring to any Discussion?**
+1. **Is this Pull Request referring to any [Discussion] _(on the GitHub)_?**
     <!-- Yes, discussion: #<id> -->
     <!-- No. -->
 
@@ -82,6 +80,7 @@ Such as:
 -   [link label](url link)
 -   [link label](url link)
 
-[code of conduct]: ../CODE_OF_CONDUCT.md
-[contributing guideliness]: ../CONTRIBUTING.md
+[code of conduct]: https://github.com/terminal-nerds/terminal-nerd/blob/main/.github/CODE_OF_CONDUCT.md
+[contributing guideliness]: https://github.com/terminal-nerds/terminal-nerd/blob/main/.github/CONTRIBUTING.md
+[discussion]: https://github.com/terminal-nerds/terminal-nerd/discussions
 [wiki]: https://github.com/terminal-nerds/terminal-nerd/wiki
