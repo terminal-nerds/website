@@ -12,7 +12,8 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@terminal-nerd/common": "workspace:*"
+		"@terminal-nerd/common": "workspace:*",
+		"stylelint": "^13.13.1"
 	},
 	"scripts": {
 		"build": "tsc --build",
