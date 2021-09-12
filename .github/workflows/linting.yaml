@@ -31,12 +31,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -72,12 +72,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -113,12 +113,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -150,19 +150,19 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
-            - name: Cache last ESLint run
+            - name: Cache ESLint run
               uses: actions/cache@v2
               with:
                   path: ${{ env.NODE_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/.eslintcache') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-eslint-${{ hashFiles('**/.eslintcache') }}
+                  restore-keys: ${{ runner.os }}-eslint-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
