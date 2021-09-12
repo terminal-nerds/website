@@ -1,0 +1,25 @@
+{
+	// https://code.visualstudio.com/docs/editor/workspaces
+	"folders": [
+		{
+			"name": "Root - /",
+			"path": "../"
+		},
+		{
+			"name": "🖥️ - client/",
+			"path": "../client"
+		},
+		{
+			"name": "🤝 - common/",
+			"path": "../common"
+		},
+		{
+			"name": "🧰 - scripts/",
+			"path": "../scripts"
+		},
+		{
+			"name": "🔌 - server/",
+			"path": "../server"
+		}
+	]
+}
