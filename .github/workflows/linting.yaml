@@ -83,11 +83,7 @@ jobs:
               uses: pnpm/action-setup@v2.0.1
               with:
                   version: ${{ matrix.pnpm-version }}
-                  run_install: |
-                      - args:
-                        - --workspace-root
-                        - markdownlint
-                        - markdownlint-cli
+                  run_install: true
 
             - name: Execute Prettier script
               run: >
