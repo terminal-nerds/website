@@ -13,7 +13,8 @@
 	"type": "module",
 	"devDependencies": {
 		"@terminal-nerd/common": "workspace:*",
-		"stylelint": "^13.13.1"
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^22.0.0"
 	},
 	"scripts": {
 		"build": "tsc --build",

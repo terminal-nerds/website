@@ -92,9 +92,11 @@ importers:
     specifiers:
       '@terminal-nerd/common': workspace:*
       stylelint: ^13.13.1
+      stylelint-config-standard: ^22.0.0
     devDependencies:
       '@terminal-nerd/common': link:../common
       stylelint: 13.13.1
+      stylelint-config-standard: 22.0.0_stylelint@13.13.1
 
   common:
     specifiers: {}
@@ -4418,6 +4420,23 @@ packages:
 
   /style-search/0.1.0:
     resolution: {integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=}
+    dev: true
+
+  /stylelint-config-recommended/5.0.0_stylelint@13.13.1:
+    resolution: {integrity: sha512-c8aubuARSu5A3vEHLBeOSJt1udOdS+1iue7BmJDTSXoCBmfEQmmWX+59vYIj3NQdJBY6a/QRv1ozVFpaB9jaqA==}
+    peerDependencies:
+      stylelint: ^13.13.0
+    dependencies:
+      stylelint: 13.13.1
+    dev: true
+
+  /stylelint-config-standard/22.0.0_stylelint@13.13.1:
+    resolution: {integrity: sha512-uQVNi87SHjqTm8+4NIP5NMAyY/arXrBgimaaT7skvRfE9u3JKXRK9KBkbr4pVmeciuCcs64kAdjlxfq6Rur7Hw==}
+    peerDependencies:
+      stylelint: ^13.13.0
+    dependencies:
+      stylelint: 13.13.1
+      stylelint-config-recommended: 5.0.0_stylelint@13.13.1
     dev: true
 
   /stylelint/13.13.1:
