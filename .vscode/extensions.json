@@ -5,6 +5,7 @@
 		"joshbolduc.commitlint",
 		"vivaxy.vscode-conventional-commits",
 		"davidanson.vscode-markdownlint",
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"webben.browserslist"
 	]
 }
