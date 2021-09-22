@@ -3,6 +3,7 @@ name: Linting
 on:
     pull_request:
         branches: [main, develop]
+        types: [ready_for_review]
 
 env:
     NODE_ENV: continuous-integration
