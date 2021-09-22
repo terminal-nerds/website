@@ -91,8 +91,10 @@ importers:
   client:
     specifiers:
       '@terminal-nerd/common': workspace:*
+      browserslist: ^4.17.0
     devDependencies:
       '@terminal-nerd/common': link:../common
+      browserslist: 4.17.0
 
   common:
     specifiers: {}
@@ -1015,6 +1017,18 @@ packages:
       node-releases: 1.1.75
     dev: true
 
+  /browserslist/4.17.0:
+    resolution: {integrity: sha512-g2BJ2a0nEYvEFQC208q8mVAhfNwpZ5Mu8BwgtCdZKO3qx98HChmeg448fPdUzld8aFmfLgVh7yymqV+q1lJZ5g==}
+    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
+    hasBin: true
+    dependencies:
+      caniuse-lite: 1.0.30001255
+      colorette: 1.3.0
+      electron-to-chromium: 1.3.833
+      escalade: 3.1.1
+      node-releases: 1.1.75
+    dev: true
+
   /builtin-modules/3.2.0:
     resolution: {integrity: sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==}
     engines: {node: '>=6'}
@@ -1066,6 +1080,10 @@ packages:
 
   /caniuse-lite/1.0.30001251:
     resolution: {integrity: sha512-HOe1r+9VkU4TFmnU70z+r7OLmtR+/chB1rdcJUeQlAinjEeb0cKL20tlAtOagNZhbrtLnCvV19B4FmF1rgzl6A==}
+    dev: true
+
+  /caniuse-lite/1.0.30001255:
+    resolution: {integrity: sha512-F+A3N9jTZL882f/fg/WWVnKSu6IOo3ueLz4zwaOPbPYHNmM/ZaDUyzyJwS1mZhX7Ex5jqTyW599Gdelh5PDYLQ==}
     dev: true
 
   /chalk/2.4.2:
@@ -1425,6 +1443,10 @@ packages:
 
   /electron-to-chromium/1.3.814:
     resolution: {integrity: sha512-0mH03cyjh6OzMlmjauGg0TLd87ErIJqWiYxMcOLKf5w6p0YEOl7DJAj7BDlXEFmCguY5CQaKVOiMjAMODO2XDw==}
+    dev: true
+
+  /electron-to-chromium/1.3.833:
+    resolution: {integrity: sha512-h+9aVaUHjyunLqtCjJF2jrJ73tYcJqo2cCGKtVAXH9WmnBsb8hiChRQ0P1uXjdxR6Wcfxibephy41c1YlZA/pA==}
     dev: true
 
   /emoji-regex/7.0.3:

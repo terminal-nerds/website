@@ -12,10 +12,12 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@terminal-nerd/common": "workspace:*"
+		"@terminal-nerd/common": "workspace:*",
+		"browserslist": "^4.17.0"
 	},
 	"scripts": {
 		"build": "tsc --build",
+		"browsers": "browserslist",
 		"clean:all": "run-s clean:build clean:node",
 		"clean:build": "rimraf ./build",
 		"clean:node": "rimraf ./node_modules",
