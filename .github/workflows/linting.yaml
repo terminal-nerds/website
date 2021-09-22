@@ -103,6 +103,9 @@ jobs:
                 pnpm-version: [6]
                 os: [ubuntu-latest]
         steps:
+            - name: Print
+              run: echo "${{ github.event.pull_request.files }} ${{ github.event.pull_request.commits }}"
+
             - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
