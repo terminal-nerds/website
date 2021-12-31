@@ -126,7 +126,7 @@ jobs:
                   run_install: true
 
             - name: Execute markdownlint
-              run: pnpm markdownlint . --ignore node_modules/
+              run: pnpm markdownlint . --dot --ignore-path .gitignore
 
     eslint:
         name: ESLint - statically analyze the JavaScript code
