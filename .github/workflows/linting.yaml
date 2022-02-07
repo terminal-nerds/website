@@ -3,9 +3,11 @@ name: Linting
 on:
     pull_request:
         branches: [main, develop]
+        types: [ready_for_review]
 
 env:
     NODE_ENV: continuous-integration
+    NODE_CACHE_FOLDER: node_modules/.cache
     PNPM_CACHE_FOLDER: .pnpm-store
 
 jobs:
@@ -15,9 +17,9 @@ jobs:
         timeout-minutes: 5
         strategy:
             matrix:
-                node-version: [14.x]
-                pnpm-version: [6.x]
                 os: [ubuntu-latest]
+                node-version: [lts/*]
+                pnpm-version: [6]
         steps:
             - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
@@ -30,12 +32,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -56,8 +58,8 @@ jobs:
         timeout-minutes: 5
         strategy:
             matrix:
-                node-version: [14.x]
-                pnpm-version: [6.x]
+                node-version: [lts/*]
+                pnpm-version: [6]
                 os: [ubuntu-latest]
         steps:
             - name: Checkout to ${{ github.repository }}
@@ -71,12 +73,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -97,10 +99,13 @@ jobs:
         timeout-minutes: 5
         strategy:
             matrix:
-                node-version: [14.x]
-                pnpm-version: [6.x]
+                node-version: [lts/*]
+                pnpm-version: [6]
                 os: [ubuntu-latest]
         steps:
+            - name: Print
+              run: echo "${{ github.event.pull_request.files }} ${{ github.event.pull_request.commits }}"
+
             - name: Checkout to ${{ github.repository }}
               uses: actions/checkout@v2
               with:
@@ -112,12 +117,12 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -134,8 +139,8 @@ jobs:
         timeout-minutes: 5
         strategy:
             matrix:
-                node-version: [14.x]
-                pnpm-version: [6.x]
+                node-version: [lts/*]
+                pnpm-version: [6]
                 os: [ubuntu-latest]
         steps:
             - name: Checkout to ${{ github.repository }} repository
@@ -149,12 +154,19 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: Cache Node.js modules with pnpm
+            - name: Cache Node.js dependencies with pnpm
               uses: actions/cache@v2
               with:
                   path: ${{ env.PNPM_CACHE_FOLDER }}
-                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-                  restore-keys: ${{ runner.os }}-
+                  key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: ${{ runner.os }}-pnpm-
+
+            - name: Cache ESLint run
+              uses: actions/cache@v2
+              with:
+                  path: ${{ env.NODE_CACHE_FOLDER }}
+                  key: ${{ runner.os }}-eslint-${{ hashFiles('**/.eslintcache') }}
+                  restore-keys: ${{ runner.os }}-eslint-
 
             - name: Use pnpm version ${{ matrix.pnpm-version }}
               uses: pnpm/action-setup@v2.0.1
@@ -165,5 +177,7 @@ jobs:
             - name: Execute ESLint
               run: >
                   pnpm eslint .
+                  --cache
+                  --cache-location node_modules/.cache/.eslintcache
                   --ext .json,.ts,.yaml,.yml,.vue
                   --format codeframe
